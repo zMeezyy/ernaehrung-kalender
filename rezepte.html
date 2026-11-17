@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Rezepte"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style></head><body>
+<title>Jakobs Rezeptbuch</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: Karteikasten. Rezeptkarten von A bis Z, rechts eine Register-Leiste mit Buchstaben, Suche klebt oben. */
+:root{
+  --bg:#edf0e5; --card:#fbfcf7; --ink:#1e2a23; --muted:#5d6b61; --line:#d6dccb;
+  --accent:#2c5a42; --accent-ink:#f4f7ef; --mark:#f4d468; --mark-ink:#3a3000; --hl:#f4d468;
+  --t-fr:#f7e7b0; --t-ha:#d6e6d2; --t-sn:#ece2d0; --t-sh:#d8e6ee;
+  --p:#2c5a42; --f:#e0b53c; --kh:#9cbf9f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Source Sans 3",-apple-system,"Segoe UI",system-ui,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#131a16; --card:#1a231e; --ink:#e6ece3; --muted:#9ba89e; --line:#2b3730;
+  --accent:#8cc6a2; --accent-ink:#10231a; --mark:#d8b74a; --mark-ink:#1d1700; --hl:#5e4f1c;
+  --t-fr:#3d3622; --t-ha:#22382b; --t-sn:#372f24; --t-sh:#21323b;
+  --p:#8cc6a2; --f:#d8b74a; --kh:#5d7f62; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131a16; --card:#1a231e; --ink:#e6ece3; --muted:#9ba89e; --line:#2b3730;
+  --accent:#8cc6a2; --accent-ink:#10231a; --mark:#d8b74a; --mark-ink:#1d1700; --hl:#5e4f1c;
+  --t-fr:#3d3622; --t-ha:#22382b; --t-sn:#372f24; --t-sh:#21323b;
+  --p:#8cc6a2; --f:#d8b74a; --kh:#5d7f62; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.45;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:calc(max(16px,env(safe-area-inset-right,0px)) + 22px);padding-block:20px 64px}
+
+/* Kopf */
+.hero{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end;padding-block:8px 18px}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,9vw,3.2rem);line-height:.95;margin:0;letter-spacing:-.02em;text-wrap:balance}
+.hero h1 span{background:linear-gradient(transparent 58%,var(--hl) 58%,var(--hl) 92%,transparent 92%);padding-inline:2px}
+.hero p{margin:10px 0 0;color:var(--muted);font-size:.95rem}
+.hero svg{width:clamp(92px,26vw,150px);height:auto;color:var(--accent)}
+
+/* Suche + Filter */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px 8px;display:grid;gap:10px;margin-inline:-4px;padding-inline:4px}
+.search{position:relative}
+.search svg{position:absolute;left:14px;top:50%;translate:0 -50%;width:20px;height:20px;color:var(--muted);pointer-events:none}
+#q{width:100%;padding:13px 44px 13px 44px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);font-size:17px;-webkit-appearance:none;appearance:none}
+#q::placeholder{color:var(--muted)}
+#q:focus{border-color:var(--accent);outline:none}
+#q::-webkit-search-cancel-button{display:none}
+#clr{position:absolute;right:6px;top:50%;translate:0 -50%;border:0;background:none;width:36px;height:36px;border-radius:50%;color:var(--muted);cursor:pointer;font-size:20px;line-height:1}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1.5px solid var(--line);background:var(--card);padding:6px 13px;border-radius:999px;font-size:.9rem;font-weight:600;cursor:pointer;white-space:nowrap}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.count{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* Liste */
+.list{display:grid;gap:22px;margin-top:6px}
+.grp{display:grid;gap:10px;scroll-margin-top:150px}
+.letter{font-family:var(--display);font-weight:800;font-size:1.5rem;line-height:1;display:flex;align-items:center;gap:12px;color:var(--accent)}
+.letter::after{content:"";flex:1;height:1.5px;background:var(--line)}
+.card{display:grid;grid-template-columns:58px 1fr;gap:14px;align-items:center;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px 12px 12px;cursor:pointer;transition:transform .12s}
+.card:active{transform:scale(.985)}
+.tile{width:58px;height:58px;border-radius:12px;display:grid;place-items:center;color:var(--ink)}
+.tile svg{width:42px;height:42px}
+.k-Frühstück{background:var(--t-fr)}.k-Hauptgericht{background:var(--t-ha)}.k-Snack{background:var(--t-sn)}.k-Shake{background:var(--t-sh)}
+.ct{min-width:0}
+.ct h3{margin:0;font-size:1.02rem;font-weight:700;line-height:1.25}
+.ct h3 mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding-inline:1px}
+.meta{margin-top:4px;font-size:.84rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 12px;font-variant-numeric:tabular-nums}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.tag{font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+.empty{background:var(--card);border:1.5px dashed var(--line);border-radius:var(--r);padding:28px 18px;text-align:center;color:var(--muted)}
+.empty svg{width:64px;height:64px;color:var(--muted);margin-bottom:6px}
+
+/* Register A–Z */
+.rail{position:fixed;right:max(4px,env(safe-area-inset-right,0px));top:50%;translate:0 -50%;z-index:6;display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 2px;border-radius:12px;background:color-mix(in srgb,var(--card) 85%,transparent);border:1px solid var(--line);touch-action:none;user-select:none;-webkit-user-select:none}
+.rail button{border:0;background:none;padding:0;width:22px;height:clamp(13px,2.4vh,20px);font-size:.7rem;font-weight:700;color:var(--accent);cursor:pointer;line-height:1}
+.rail button[disabled]{color:var(--line);cursor:default}
+
+/* Legende */
+.legend{margin-top:34px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:grid;gap:8px;font-size:.92rem}
+.legend h2{font-family:var(--display);font-size:1.05rem;margin:0}
+.legend ul{margin:0;padding-left:18px;display:grid;gap:3px}
+.legend p{margin:0;color:var(--muted);font-size:.85rem}
+.foot{margin-top:18px;color:var(--muted);font-size:.8rem;text-align:center}
+
+/* Rezeptkarte (Detail) */
+.sheet{position:fixed;inset:0;z-index:20;background:var(--bg);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;animation:up .22s ease-out}
+@keyframes up{from{transform:translateY(24px);opacity:.4}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.sheet{animation:none}.card{transition:none}}
+.sheet-in{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:calc(env(safe-area-inset-top,0px) + 10px) calc(env(safe-area-inset-bottom,0px) + 56px);display:grid;gap:18px}
+.top{display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:var(--bg);padding-block:6px;z-index:2}
+.back{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:7px 14px 7px 10px;font-weight:600;cursor:pointer}
+.back svg{width:18px;height:18px}
+.dhead{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}
+.dhead .tile{width:84px;height:84px;border-radius:18px}
+.dhead .tile svg{width:62px;height:62px}
+.dhead h2{font-family:var(--display);font-weight:800;font-size:clamp(1.45rem,6vw,2rem);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+.kat{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.facts div{padding:10px 6px;text-align:center;font-variant-numeric:tabular-nums}
+.facts div+div{border-left:1px solid var(--line)}
+.facts b{display:block;font-family:var(--display);font-size:1.25rem;line-height:1.1}
+.facts span{font-size:.75rem;color:var(--muted)}
+.mbar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--line)}
+.mbar i{display:block}
+.mleg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8rem;color:var(--muted);margin-top:6px}
+.mleg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:0}
+.sec{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 16px 14px;display:grid;gap:10px}
+.sec h3{margin:0;font-family:var(--display);font-size:1.12rem;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.stepper{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;font-family:var(--body);font-size:.9rem;font-weight:600}
+.stepper button{border:0;background:none;width:36px;height:34px;font-size:1.2rem;cursor:pointer;color:var(--accent)}
+.stepper button[disabled]{color:var(--line)}
+.stepper output{min-width:92px;text-align:center;font-variant-numeric:tabular-nums}
+.ing{list-style:none;margin:0;padding:0;display:grid}
+.ing li+li{border-top:1px dashed var(--line)}
+.ing label{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:9px 0;cursor:pointer;align-items:start}
+.ing input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--accent)}
+.amt{font-weight:700;font-variant-numeric:tabular-nums}
+.st{color:var(--muted);font-size:.86rem}
+.ing li.done .txt{opacity:.45;text-decoration:line-through}
+.ex{margin:0;color:var(--muted);font-size:.92rem}
+.ex b{color:var(--ink)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:4px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;padding:8px 0;cursor:pointer;align-items:start}
+.steps li::before{content:counter(s);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:800;background:var(--mark);color:var(--mark-ink);font-size:.95rem}
+.steps li.done::before{content:"✓";background:var(--line);color:var(--muted)}
+.steps li.done span{opacity:.45}
+.note{background:color-mix(in srgb,var(--mark) 22%,var(--card));border:1px solid color-mix(in srgb,var(--mark) 55%,var(--line));border-radius:10px;padding:10px 12px;font-size:.9rem}
+.small{font-size:.82rem;color:var(--muted);margin:0}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <h1><span>Rezept</span>buch</h1>
+      <p id="sub">Alle Gerichte aus deinen Wochenplänen</p>
+    </div>
+    <svg viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M58 30c-6-8 6-12 0-20M74 30c-6-8 6-12 0-20M90 30c-6-8 6-12 0-20" opacity=".55"/>
+      <ellipse cx="74" cy="64" rx="48" ry="14" fill="var(--t-ha)"/>
+      <path d="M26 64c0 22 22 34 48 34s48-12 48-34"/>
+      <path d="M122 66l32-10" stroke-width="7"/>
+      <circle cx="58" cy="62" r="5" fill="var(--mark)"/><circle cx="80" cy="66" r="4" fill="var(--f)"/><circle cx="92" cy="60" r="5" fill="var(--kh)"/><circle cx="68" cy="69" r="3.5" fill="var(--kh)"/>
+      <path d="M14 108c10-14 26-16 30-30M24 100c-6-6-12-6-16-4M34 90c-2-8 2-12 8-14" opacity=".8"/>
+    </svg>
+  </header>
+
+  <div class="bar">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input id="q" type="search" placeholder="Gericht oder Zutat suchen, z. B. Reis" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-label="Rezepte durchsuchen">
+      <button id="clr" type="button" aria-label="Suche leeren" hidden>×</button>
+    </div>
+    <div class="chips" id="chips" role="toolbar" aria-label="Filter"></div>
+    <div class="count" id="count" aria-live="polite"></div>
+  </div>
+
+  <main class="list" id="list"></main>
+
+  <section class="legend">
+    <h2>So sind die Mengen gemeint</h2>
+    <ul>
+      <li>Reis, Nudeln, Haferflocken: <b>trocken, ungekocht</b> abwiegen</li>
+      <li>Fleisch: <b>roh</b> · Kartoffeln: <b>roh, ungeschält</b></li>
+      <li>Gemüse: <b>roh und geputzt</b>, so wie es in die Pfanne kommt · TK: <b>gefroren</b></li>
+      <li>Eier: Gewicht <b>ohne Schale</b>, 1 Ei Größe L ≈ 60 g</li>
+      <li>Öl, Honig, Sojasauce, Erdnussbutter: Gramm sind genauer, Löffel nur Richtwert</li>
+    </ul>
+    <p>Nährwerte sind Schätzungen aus Standard-Nährwerttabellen, echte Produkte weichen um etwa 5 bis 10 % ab. Isoclear ist geschätzt.</p>
+  </section>
+  <p class="foot" id="foot"></p>
+</div>
+
+<nav class="rail" id="rail" aria-label="Register A bis Z"></nav>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="dtitle" hidden></div>
+
+<script type="application/json" id="daten">{"stand": "17.11.2026", "Q": {"Reis": "ungekocht/trocken", "Vollkornspaghetti": "ungekocht/trocken", "Vollkornpenne": "ungekocht/trocken", "Haferflocken": "trocken", "Linsen": "trocken", "Linsen (Dose)": "abgetropft", "Kichererbsen (Dose)": "abgetropft", "Thunfisch": "abgetropft", "Hähnchenbrust": "roh", "Putenbrust": "roh", "Hackfleisch gemischt": "roh", "Kartoffeln": "roh, ungeschält", "Brokkoli": "roh, geputzt", "Karotten": "roh, geschält", "Zwiebel": "geschält", "Lauch": "geputzt", "Champignons": "roh, geputzt", "Apfel": "ohne Kerngehäuse", "Banane": "ohne Schale", "TK-Beeren": "gefroren", "TK-Asiagemüse": "gefroren", "Ei": "ohne Schale"}, "STK": {"Ei": 60}, "LOEF": {"Rapsöl": 10, "Sojasauce": 15, "Honig": 20, "Erdnussbutter": 15}, "rez": [{"id": "2-hartgekochte-eier-und-1-banane", "t": "2 hartgekochte Eier und 1 Banane", "k": "Snack", "p": 1, "z": 12, "zg": false, "zut": [{"m": 120.0, "e": "g", "n": "Ei"}, {"m": 120.0, "e": "g", "n": "Banane"}], "sch": ["2 Eier am Vorabend 10 Minuten kochen, kalt abschrecken. Mit 1 Banane einpacken."], "mak": [276, 16, 11, 25], "mp": false, "w": ["17.11.2026"], "ex": [], "hin": [], "tags": []}, {"id": "2-hartgekochte-eier-1-apfel-nuesse", "t": "2 hartgekochte Eier, 1 Apfel, Nüsse", "k": "Snack", "p": 1, "z": 12, "zg": false, "zut": [{"m": 120.0, "e": "g", "n": "Ei"}, {"m": 150.0, "e": "g", "n": "Apfel"}, {"m": 15.0, "e": "g", "n": "Nusskernmischung"}], "sch": ["2 Eier 10 Minuten kochen, kalt abschrecken.", "Mit 1 Apfel und einer kleinen Handvoll Nüssen (15 g) einpacken."], "mak": [341, 18, 20, 20], "mp": false, "w": ["10.11.2026", "17.11.2026"], "ex": [], "hin": [], "tags": []}, {"id": "2-hartgekochte-eier-nuesse", "t": "2 hartgekochte Eier, Nüsse", "k": "Snack", "p": 1, "z": 12, "zg": true, "zut": [{"m": 120.0, "e": "g", "n": "Ei"}, {"m": 30.0, "e": "g", "n": "Nusskernmischung"}], "sch": ["2 Eier wie oben 10 Minuten kochen, mit 30 g Nüssen einpacken."], "mak": [356, 20, 29, 3], "mp": false, "w": ["10.11.2026"], "ex": [], "hin": [], "tags": []}, {"id": "bauernfruehstueck-bratkartoffeln-mit-ei-mit-quark-kraeuter-d", "t": "Bauernfrühstück (Bratkartoffeln mit Ei) mit Quark-Kräuter-Dip und Karotte", "k": "Hauptgericht", "p": 1, "z": 35, "zg": false, "zut": [{"m": 500.0, "e": "g", "n": "Kartoffeln"}, {"m": 180.0, "e": "g", "n": "Ei"}, {"m": 60.0, "e": "g", "n": "Zwiebel"}, {"m": 15.0, "e": "g", "n": "Rapsöl"}, {"m": 250.0, "e": "g", "n": "Magerquark"}, {"m": 100.0, "e": "g", "n": "Karotten"}], "sch": ["500 g Kartoffeln waschen, in 1 cm Würfel schneiden, 10 Min. in Salzwasser vorkochen, abgießen.", "1 EL Öl in die große Pfanne, Kartoffeln 10 Min. goldbraun braten. Zwiebel würfeln und die letzten 3 Min. mitbraten.", "3 Eier mit Salz und Pfeffer verquirlen, über die Kartoffeln gießen, bei mittlerer Hitze unter gelegentlichem Wenden stocken lassen (3 Min.).", "Dip: 250 g Magerquark mit 3 EL Wasser, Salz, Pfeffer, Knoblauch und Italienischen Kräutern glatt rühren.", "1 Karotte schälen, in Stifte schneiden, dazu essen."], "mak": [952, 64, 33, 97], "mp": false, "w": ["17.11.2026"], "ex": ["3 EL Wasser für den Dip", "Salz, Pfeffer, Knoblauch, Italienische Kräuter"], "hin": [], "tags": ["Proteinreich"]}, {"id": "erdnuss-nudeln-mit-ei-und-tk-gemuese-asia-mild-warm-oder-kal", "t": "Erdnuss-Nudeln mit Ei und TK-Gemüse (Asia, mild, warm oder kalt)", "k": "Hauptgericht", "p": 1, "z": 20, "zg": false, "zut": [{"m": 130.0, "e": "g", "n": "Vollkornspaghetti"}, {"m": 30.0, "e": "g", "n": "Erdnussbutter"}, {"m": 20.0, "e": "g", "n": "Sojasauce"}, {"m": 120.0, "e": "g", "n": "Ei"}, {"m": 200.0, "e": "g", "n": "TK-Asiagemüse"}], "sch": ["130 g Vollkornspaghetti kochen. Vor dem Abgießen 1 Tasse Nudelwasser abnehmen.", "Soße: 2 EL Erdnussbutter (30 g), 1,5 EL Sojasauce und 4 bis 5 EL heißes Nudelwasser glatt rühren.", "In der Pfanne 200 g TK-Gemüse 5 Min. braten, 2 Eier dazu und verrühren, bis sie stocken.", "Nudeln und Soße dazu, alles mischen. Schmeckt warm oder kalt aus der Dose."], "mak": [884, 46, 30, 98], "mp": false, "w": ["17.11.2026"], "ex": ["4 bis 5 EL Nudelwasser für die Soße"], "hin": ["Hier ist kein Öl eingerechnet. Brätst du das Gemüse in Öl, kommen pro 5 g (1 TL) ca. 45 kcal dazu."], "tags": ["Asiatisch", "Proteinreich"]}, {"id": "gebratener-eierreis-mit-tk-gemuese", "t": "Gebratener Eierreis mit TK-Gemüse", "k": "Hauptgericht", "p": 1, "z": 25, "zg": false, "zut": [{"m": 110.0, "e": "g", "n": "Reis"}, {"m": 180.0, "e": "g", "n": "Ei"}, {"m": 200.0, "e": "g", "n": "TK-Asiagemüse"}, {"m": 10.0, "e": "g", "n": "Rapsöl"}, {"m": 15.0, "e": "g", "n": "Sojasauce"}], "sch": ["110 g Reis (ungekocht) nach Packung kochen (1 Teil Reis, 2 Teile Wasser, Salz, ca. 15 Min. mit Deckel).", "1 TL Öl in die Pfanne, 200 g TK-Gemüse gefroren hinein, 5 Min. braten.", "Reis dazu, 2 Min. braten. Noch 1 TL Öl, 3 Eier aufschlagen und unter Rühren stocken lassen.", "1 EL Sojasauce und Pfeffer dazu."], "mak": [799, 37, 28, 96], "mp": false, "w": ["17.11.2026"], "ex": ["Salz, Pfeffer", "220 ml Wasser zum Reiskochen"], "hin": [], "tags": ["Asiatisch"]}, {"id": "gebratener-reis-mit-haehnchen-und-gemuese-wok-art-mild", "t": "Gebratener Reis mit Hähnchen und Gemüse (Wok-Art, mild)", "k": "Hauptgericht", "p": 2, "z": 35, "zg": true, "zut": [{"m": 120.0, "e": "g", "n": "Reis"}, {"m": 200.0, "e": "g", "n": "Hähnchenbrust"}, {"m": 200.0, "e": "g", "n": "Brokkoli"}, {"m": 75.0, "e": "g", "n": "Karotten"}, {"m": 40.0, "e": "g", "n": "Zwiebel"}, {"m": 10.0, "e": "g", "n": "Rapsöl"}, {"m": 15.0, "e": "g", "n": "Sojasauce"}], "sch": ["240 g Reis nach Packung kochen (meist 1 Teil Reis, 2 Teile Wasser, Salz, ca. 15 Min. mit Deckel). Am besten schon mittags, kalter Reis brät sich besser.", "Hähnchen (400 g) in kleine Würfel schneiden. Zwiebel würfeln, 2 Karotten in dünne Scheiben, Brokkoli in kleine Röschen.", "1 EL Öl in einer großen Pfanne heiß werden lassen, Hähnchen 5 bis 6 Min. rundum braten bis es innen nicht mehr rosa ist, herausnehmen.", "Noch 1 EL Öl, Zwiebel, Karotten und Brokkoli 5 Min. braten, eventuell einen Schuss Wasser dazu.", "Reis und Hähnchen dazu, 3 EL Sojasauce, Pfeffer und etwas Knoblauch-Granulat, alles 3 Min. braten.", "Hälfte essen, Hälfte in eine Dose für Mittwoch Mittag (abgekühlt in den Kühlschrank)."], "mak": [836, 66, 14, 106], "mp": true, "w": ["10.11.2026"], "ex": ["Pfeffer, etwas Knoblauch-Granulat"], "hin": ["In der Anleitung steht 3 EL Sojasauce. Gerechnet ist mit 30 g (ca. 2 EL) für 2 Portionen."], "tags": ["Meal-Prep", "Asiatisch", "Proteinreich"]}, {"id": "honig-soja-haehnchen-mit-reis-brokkoli-und-karotten-mild", "t": "Honig-Soja-Hähnchen mit Reis, Brokkoli und Karotten (mild)", "k": "Hauptgericht", "p": 2, "z": 35, "zg": false, "zut": [{"m": 120.0, "e": "g", "n": "Reis"}, {"m": 200.0, "e": "g", "n": "Hähnchenbrust"}, {"m": 200.0, "e": "g", "n": "Brokkoli"}, {"m": 75.0, "e": "g", "n": "Karotten"}, {"m": 40.0, "e": "g", "n": "Zwiebel"}, {"m": 15.0, "e": "g", "n": "Honig"}, {"m": 20.0, "e": "g", "n": "Sojasauce"}, {"m": 10.0, "e": "g", "n": "Rapsöl"}], "sch": ["240 g Reis (ungekocht) kochen (wie oben).", "Soße anrühren: 40 g Sojasauce (ca. 2,5 EL), 30 g Honig (ca. 1,5 EL), 1/2 TL Knoblauch-Granulat, 4 EL Wasser.", "Hähnchen (400 g) in Streifen schneiden. Zwiebel in Streifen, 2 Karotten in dünne Scheiben, Brokkoli in kleine Röschen.", "1 EL Öl in der großen Pfanne heiß werden lassen, Hähnchen 5 bis 6 Min. braten, bis es innen nicht mehr rosa ist, herausnehmen.", "Noch 1 EL Öl, Zwiebel, Karotten und Brokkoli 5 Min. braten, einen Schuss Wasser dazu, damit der Brokkoli gart.", "Hähnchen zurück, Soße drüber, 2 Min. einköcheln lassen, bis sie glänzt. Mit Reis essen.", "Hälfte in eine Dose für Mittwoch Mittag (abgekühlt in den Kühlschrank)."], "mak": [884, 66, 14, 118], "mp": true, "w": ["17.11.2026"], "ex": ["½ TL Knoblauch-Granulat", "4 EL Wasser für die Soße", "480 ml Wasser zum Reiskochen"], "hin": ["Brokkoli: 400 g geputzt entspricht ca. 1 großem Kopf von 500 bis 600 g."], "tags": ["Meal-Prep", "Asiatisch", "Proteinreich"]}, {"id": "isoclear-shake-mit-wasser", "t": "Isoclear-Shake mit Wasser", "k": "Shake", "p": 1, "z": 2, "zg": false, "zut": [{"roh": "1 Portion Isoclear"}], "sch": ["1 Portion Isoclear (Messlöffel laut Packung) mit 300 bis 400 ml kaltem Wasser schütteln.", "Optional: Wenn du dein Protein schon gut erreichst, kannst du ihn weglassen."], "mak": [90, 22, 0, 0], "mp": false, "w": ["10.11.2026", "17.11.2026"], "ex": ["300 bis 400 ml kaltes Wasser"], "hin": ["Werte pro Portion sind geschätzt, nicht von deiner Packung."], "tags": ["Schnell"]}, {"id": "kartoffel-hack-pfanne-mit-lauch-und-skyr-kraeuter-dip", "t": "Kartoffel-Hack-Pfanne mit Lauch und Skyr-Kräuter-Dip", "k": "Hauptgericht", "p": 2, "z": 40, "zg": false, "zut": [{"m": 500.0, "e": "g", "n": "Kartoffeln"}, {"m": 250.0, "e": "g", "n": "Hackfleisch gemischt"}, {"m": 150.0, "e": "g", "n": "Lauch"}, {"m": 40.0, "e": "g", "n": "Zwiebel"}, {"m": 5.0, "e": "g", "n": "Rapsöl"}, {"m": 100.0, "e": "g", "n": "Skyr"}], "sch": ["1 kg Kartoffeln waschen (Schale kann dranbleiben) und in ca. 1 cm Würfel schneiden. 10 Min. in Salzwasser vorkochen, abgießen.", "Lauch längs halbieren, gut waschen (Sand!), in Ringe schneiden. Zwiebel würfeln.", "1 EL Öl in die große Pfanne, Kartoffeln 10 Min. goldbraun braten, an den Rand schieben.", "Hack (500 g) in die Mitte, krümelig braten (5 Min.). Zwiebel und Lauch dazu, 5 Min. mitbraten.", "Mit Salz, Pfeffer, 1 TL Paprika edelsüß würzen. Nicht scharf.", "Dip: 200 g Skyr mit Salz, Pfeffer, Knoblauch und Italienischen Kräutern verrühren.", "Hälfte (mit halbem Dip) für Donnerstag Mittag einpacken."], "mak": [1120, 70, 54, 86], "mp": true, "w": ["17.11.2026"], "ex": ["1 TL Paprika edelsüß", "Salz, Pfeffer, Knoblauch, Italienische Kräuter"], "hin": ["Lauch: 300 g geputzt ist ca. 1 große Stange von 400 g.", "Das Fett, das beim Hack-Braten austritt, bleibt in der Pfanne und ist eingerechnet."], "tags": ["Meal-Prep", "Proteinreich"]}, {"id": "knaeckebrot-mit-erdnussbutter", "t": "Knäckebrot mit Erdnussbutter", "k": "Snack", "p": 1, "z": 2, "zg": false, "zut": [{"m": 40.0, "e": "g", "n": "Knäckebrot"}, {"m": 20.0, "e": "g", "n": "Erdnussbutter"}], "sch": ["4 Scheiben Knäckebrot (40 g) mit 20 g Erdnussbutter bestreichen."], "mak": [258, 9, 10, 27], "mp": false, "w": ["10.11.2026", "17.11.2026"], "ex": [], "hin": [], "tags": ["Schnell"]}, {"id": "koerniger-frischkaese-mit-karottensticks", "t": "Körniger Frischkäse mit Karottensticks", "k": "Snack", "p": 1, "z": 5, "zg": false, "zut": [{"m": 200.0, "e": "g", "n": "Körniger Frischkäse"}, {"m": 100.0, "e": "g", "n": "Karotten"}], "sch": ["200 g körnigen Frischkäse in eine Dose, mit Salz und Pfeffer würzen.", "1 Karotte schälen und in Stifte schneiden, zum Dippen dazu."], "mak": [232, 26, 9, 11], "mp": false, "w": ["10.11.2026", "17.11.2026"], "ex": [], "hin": [], "tags": ["Schnell"]}, {"id": "magerquark-mit-apfel-zimt-honig-und-nuessen-dazu-1-kleines-g", "t": "Magerquark mit Apfel, Zimt, Honig und Nüssen, dazu 1 kleines Glas Milch", "k": "Snack", "p": 1, "z": 5, "zg": false, "zut": [{"m": 250.0, "e": "g", "n": "Magerquark"}, {"m": 150.0, "e": "g", "n": "Apfel"}, {"m": 10.0, "e": "g", "n": "Honig"}, {"m": 15.0, "e": "g", "n": "Nusskernmischung"}, {"m": 150.0, "e": "ml", "n": "Milch 1,5%"}], "sch": ["250 g Magerquark mit 2 EL Wasser oder Milch glatt rühren.", "1 Apfel würfeln, dazu, 1 TL Honig, etwas Zimt und 15 g Nüsse drüber.", "Dazu ein kleines Glas Milch (150 ml)."], "mak": [445, 38, 12, 44], "mp": false, "w": ["17.11.2026"], "ex": ["Zimt nach Geschmack", "2 EL Wasser zum Glattrühren"], "hin": [], "tags": ["Schnell"]}, {"id": "mexikanische-hack-reis-bowl-mild-mit-mais-paprika-und-skyr-d", "t": "Mexikanische Hack-Reis-Bowl (mild) mit Mais, Paprika und Skyr-Dip", "k": "Hauptgericht", "p": 2, "z": 35, "zg": true, "zut": [{"m": 90.0, "e": "g", "n": "Reis"}, {"m": 125.0, "e": "g", "n": "Hackfleisch gemischt"}, {"m": 70.0, "e": "g", "n": "Mais"}, {"m": 75.0, "e": "g", "n": "Paprika"}, {"m": 75.0, "e": "g", "n": "Karotten"}, {"m": 75.0, "e": "g", "n": "Skyr"}, {"m": 50.0, "e": "g", "n": "Gouda gerieben"}], "sch": ["180 g Reis kochen (wie Dienstag).", "Hackfleisch (250 g) ohne Öl krümelig braten, mit 1 TL Paprika edelsüß, 1/2 TL Kreuzkümmel, Salz, Knoblauch-Granulat würzen. Nicht scharf.", "Paprika würfeln, 1 Karotte reiben, Mais abtropfen lassen.", "Skyr-Dip: 150 g Skyr mit Salz, Pfeffer und etwas Knoblauch verrühren.", "In zwei Schüsseln/Dosen: Reis, Hack, Gemüse, Mais, je 50 g Gouda und Dip. Eine Dose für Freitag (Dip separat)."], "mak": [958, 53, 40, 93], "mp": true, "w": ["10.11.2026"], "ex": ["1 TL Paprika edelsüß, ½ TL Kreuzkümmel", "Salz, Knoblauch-Granulat"], "hin": ["Dip für die zweite Portion getrennt einpacken."], "tags": ["Meal-Prep", "Proteinreich"]}, {"id": "overnight-oats-apfel-zimt-mit-skyr", "t": "Overnight Oats Apfel-Zimt mit Skyr", "k": "Frühstück", "p": 1, "z": 5, "zg": false, "zut": [{"m": 90.0, "e": "g", "n": "Haferflocken"}, {"m": 250.0, "e": "ml", "n": "Milch 1,5%"}, {"m": 100.0, "e": "g", "n": "Skyr"}, {"m": 120.0, "e": "g", "n": "Apfel"}], "sch": ["Abends 90 g Haferflocken, 250 ml Milch und 100 g Skyr in eine Dose geben und verrühren.", "1 Apfel klein würfeln oder reiben, dazu, 1/2 TL Zimt drüber. Deckel drauf, Kühlschrank."], "mak": [580, 32, 10, 83], "mp": false, "w": ["17.11.2026"], "ex": ["½ TL Zimt"], "hin": [], "tags": ["Schnell"]}, {"id": "overnight-oats-mit-banane-und-erdnussbutter", "t": "Overnight Oats mit Banane und Erdnussbutter", "k": "Frühstück", "p": 1, "z": 5, "zg": true, "zut": [{"m": 90.0, "e": "g", "n": "Haferflocken"}, {"m": 250.0, "e": "ml", "n": "Milch 1,5%"}, {"m": 120.0, "e": "g", "n": "Banane"}, {"m": 15.0, "e": "g", "n": "Erdnussbutter"}], "sch": ["Abends 90 g Haferflocken mit 250 ml Milch in ein Glas oder eine Dose geben.", "1 EL Erdnussbutter (15 g) unterrühren, Deckel drauf, in den Kühlschrank.", "Morgens 1 Banane in Scheiben drauf schneiden. Fertig."], "mak": [655, 26, 18, 91], "mp": false, "w": ["10.11.2026"], "ex": [], "hin": [], "tags": ["Schnell"]}, {"id": "overnight-oats-mit-banane-und-skyr", "t": "Overnight Oats mit Banane und Skyr", "k": "Frühstück", "p": 1, "z": 5, "zg": false, "zut": [{"m": 90.0, "e": "g", "n": "Haferflocken"}, {"m": 250.0, "e": "ml", "n": "Milch 1,5%"}, {"m": 100.0, "e": "g", "n": "Skyr"}, {"m": 120.0, "e": "g", "n": "Banane"}], "sch": ["Abends 90 g Haferflocken, 250 ml Milch und 100 g Skyr verrühren, Kühlschrank.", "Morgens 1 Banane in Scheiben drauf. Etwas Zimt passt gut."], "mak": [627, 33, 10, 93], "mp": false, "w": ["17.11.2026"], "ex": ["Zimt nach Geschmack (optional)"], "hin": [], "tags": ["Schnell"]}, {"id": "overnight-oats-mit-banane-skyr-und-erdnussbutter", "t": "Overnight Oats mit Banane, Skyr und Erdnussbutter", "k": "Frühstück", "p": 1, "z": 5, "zg": false, "zut": [{"m": 90.0, "e": "g", "n": "Haferflocken"}, {"m": 250.0, "e": "ml", "n": "Milch 1,5%"}, {"m": 100.0, "e": "g", "n": "Skyr"}, {"m": 120.0, "e": "g", "n": "Banane"}, {"m": 15.0, "e": "g", "n": "Erdnussbutter"}], "sch": ["Abends 90 g Haferflocken, 250 ml Milch, 100 g Skyr und 1 EL Erdnussbutter (15 g) verrühren.", "Morgens 1 Banane in Scheiben drauf."], "mak": [718, 37, 18, 95], "mp": false, "w": ["17.11.2026"], "ex": [], "hin": [], "tags": ["Schnell"]}, {"id": "overnight-oats-mit-beeren-skyr-und-erdnussbutter", "t": "Overnight Oats mit Beeren, Skyr und Erdnussbutter", "k": "Frühstück", "p": 1, "z": 5, "zg": true, "zut": [{"m": 90.0, "e": "g", "n": "Haferflocken"}, {"m": 250.0, "e": "ml", "n": "Milch 1,5%"}, {"m": 100.0, "e": "g", "n": "Skyr"}, {"m": 100.0, "e": "g", "n": "TK-Beeren"}, {"m": 60.0, "e": "g", "n": "Banane"}, {"m": 15.0, "e": "g", "n": "Erdnussbutter"}], "sch": ["Abends 90 g Haferflocken, 250 ml Milch und 100 g Skyr in eine Dose geben und verrühren.", "100 g TK-Beeren gefroren drauf geben (tauen über Nacht auf), 1 EL Erdnussbutter dazu.", "Morgens eine halbe Banane dazuschneiden."], "mak": [708, 37, 18, 90], "mp": false, "w": ["10.11.2026"], "ex": [], "hin": [], "tags": ["Schnell"]}, {"id": "rest-oats-mit-h-milch-beeren-erdnussbutter-und-knaeckebrot", "t": "Rest-Oats mit H-Milch, Beeren, Erdnussbutter und Knäckebrot", "k": "Frühstück", "p": 1, "z": 5, "zg": false, "zut": [{"m": 50.0, "e": "g", "n": "Haferflocken"}, {"m": 250.0, "e": "ml", "n": "H-Milch 1,5%"}, {"m": 100.0, "e": "g", "n": "TK-Beeren"}, {"m": 20.0, "e": "g", "n": "Erdnussbutter"}, {"m": 40.0, "e": "g", "n": "Knäckebrot"}], "sch": ["Die letzten ca. 50 g Haferflocken mit 250 ml H-Milch verrühren, 5 Min. quellen lassen.", "100 g TK-Beeren und 1 gehäuften EL Erdnussbutter (20 g) dazu.", "Dazu 4 Scheiben Knäckebrot (40 g)."], "mak": [606, 25, 18, 76], "mp": false, "w": ["17.11.2026"], "ex": [], "hin": [], "tags": ["Schnell"]}, {"id": "skyr-mit-banane-und-nuessen-dazu-1-glas-milch", "t": "Skyr mit Banane und Nüssen, dazu 1 Glas Milch", "k": "Snack", "p": 1, "z": 5, "zg": true, "zut": [{"m": 150.0, "e": "g", "n": "Skyr"}, {"m": 120.0, "e": "g", "n": "Banane"}, {"m": 20.0, "e": "g", "n": "Nusskernmischung"}, {"m": 250.0, "e": "ml", "n": "Milch 1,5%"}], "sch": ["150 g Skyr in eine Schüssel, 1 Banane in Scheiben und 20 g Nüsse drauf.", "Dazu ein Glas Milch (250 ml)."], "mak": [452, 30, 16, 44], "mp": false, "w": ["10.11.2026"], "ex": [], "hin": [], "tags": ["Schnell"]}, {"id": "thunfisch-ei-reispfanne-mit-tk-gemuese", "t": "Thunfisch-Ei-Reispfanne mit TK-Gemüse", "k": "Hauptgericht", "p": 1, "z": 25, "zg": true, "zut": [{"m": 110.0, "e": "g", "n": "Reis"}, {"m": 150.0, "e": "g", "n": "Thunfisch"}, {"m": 120.0, "e": "g", "n": "Ei"}, {"m": 200.0, "e": "g", "n": "TK-Asiagemüse"}, {"m": 10.0, "e": "g", "n": "Rapsöl"}, {"m": 15.0, "e": "g", "n": "Sojasauce"}], "sch": ["110 g Reis kochen (oder am Vortag mitkochen).", "1 TL Öl in die Pfanne, 200 g TK-Gemüse gefroren hinein, 5 Min. braten.", "Reis und abgetropften Thunfisch (1 Dose) dazu, 2 Min. braten.", "2 Eier aufschlagen, dazugeben und unter Rühren stocken lassen. 1 EL Sojasauce, Pfeffer."], "mak": [882, 67, 24, 95], "mp": false, "w": ["10.11.2026"], "ex": ["Pfeffer"], "hin": [], "tags": ["Asiatisch", "Proteinreich"]}, {"id": "vollkorn-spaghetti-bolognese", "t": "Vollkorn-Spaghetti Bolognese", "k": "Hauptgericht", "p": 2, "z": 35, "zg": true, "zut": [{"m": 100.0, "e": "g", "n": "Vollkornspaghetti"}, {"m": 125.0, "e": "g", "n": "Hackfleisch gemischt"}, {"m": 250.0, "e": "g", "n": "Passierte Tomaten"}, {"m": 75.0, "e": "g", "n": "Karotten"}, {"m": 40.0, "e": "g", "n": "Zwiebel"}, {"m": 2.0, "e": "g", "n": "Rapsöl"}, {"m": 50.0, "e": "g", "n": "Gouda gerieben"}], "sch": ["Zwiebel fein würfeln, 2 Karotten fein reiben oder klein würfeln.", "1 TL Öl in einen Topf, Hackfleisch (250 g) bei hoher Hitze krümelig braten (ca. 5 Min.).", "Zwiebel und Karotten dazu, 3 Min. mitbraten.", "500 g passierte Tomaten, Salz, Pfeffer, 1 TL Italienische Kräuter dazu. 15 Min. leise köcheln lassen.", "Inzwischen 200 g Vollkornspaghetti in Salzwasser nach Packung kochen (ca. 9 Min.), abgießen.", "Mit Soße mischen, je Portion 50 g Gouda drüber. Hälfte für Donnerstag Mittag einpacken."], "mak": [979, 52, 44, 84], "mp": true, "w": ["10.11.2026"], "ex": ["Salz, Pfeffer, 1 TL Italienische Kräuter"], "hin": [], "tags": ["Meal-Prep", "Proteinreich"]}, {"id": "vollkornnudeln-mit-tomaten-thunfisch-sosse-dazu-1-glas-h-mil", "t": "Vollkornnudeln mit Tomaten-Thunfisch-Soße, dazu 1 Glas H-Milch", "k": "Hauptgericht", "p": 1, "z": 20, "zg": true, "zut": [{"m": 130.0, "e": "g", "n": "Vollkornspaghetti"}, {"m": 400.0, "e": "g", "n": "Stückige Tomaten"}, {"m": 250.0, "e": "ml", "n": "H-Milch 1,5%"}, {"m": 150.0, "e": "g", "n": "Thunfisch"}, {"m": 40.0, "e": "g", "n": "Zwiebel"}, {"m": 10.0, "e": "g", "n": "Rapsöl"}], "sch": ["130 g Vollkornspaghetti kochen.", "Halbe Zwiebel würfeln, in 1 TL Öl 2 Min. braten, Dose stückige Tomaten dazu, 5 Min. köcheln, mit Salz, Pfeffer, Kräutern würzen.", "Thunfisch abgießen, in die Soße geben, kurz warm machen, mit den Nudeln mischen.", "Dazu ein Glas H-Milch."], "mak": [927, 68, 19, 112], "mp": false, "w": ["10.11.2026"], "ex": ["Salz, Pfeffer, Kräuter"], "hin": [], "tags": ["Proteinreich"]}, {"id": "vollkornpenne-mit-pute-champignons-und-frischkaesesosse", "t": "Vollkornpenne mit Pute, Champignons und Frischkäsesoße", "k": "Hauptgericht", "p": 2, "z": 30, "zg": false, "zut": [{"m": 110.0, "e": "g", "n": "Vollkornpenne"}, {"m": 200.0, "e": "g", "n": "Putenbrust"}, {"m": 125.0, "e": "g", "n": "Champignons"}, {"m": 40.0, "e": "g", "n": "Zwiebel"}, {"m": 100.0, "e": "g", "n": "Frischkäse leicht"}, {"m": 50.0, "e": "ml", "n": "Milch 1,5%"}, {"m": 5.0, "e": "g", "n": "Rapsöl"}], "sch": ["220 g Vollkornpenne in Salzwasser nach Packung kochen (ca. 10 Min.), abgießen.", "Pute (400 g) in Streifen, Champignons in Scheiben, Zwiebel würfeln.", "1 EL Öl in die Pfanne, Pute 5 Min. braten bis innen nicht mehr rosa, herausnehmen.", "Zwiebel und Champignons 5 Min. braten.", "200 g Frischkäse leicht und 100 ml Milch dazu, rühren bis eine Soße entsteht. Salz, Pfeffer, Italienische Kräuter.", "Pute und Nudeln unterheben. Hälfte für Freitag Mittag einpacken."], "mak": [843, 77, 21, 79], "mp": true, "w": ["17.11.2026"], "ex": ["Salz, Pfeffer, Italienische Kräuter"], "hin": ["Frischkäse in 175-g-Packung ist auch okay (ca. 20 kcal weniger pro Portion)."], "tags": ["Meal-Prep", "Proteinreich"]}, {"id": "vorrats-oats-mit-h-milch-beeren-erdnussbutter", "t": "Vorrats-Oats mit H-Milch, Beeren, Erdnussbutter", "k": "Frühstück", "p": 1, "z": 5, "zg": false, "zut": [{"m": 90.0, "e": "g", "n": "Haferflocken"}, {"m": 250.0, "e": "ml", "n": "H-Milch 1,5%"}, {"m": 100.0, "e": "g", "n": "TK-Beeren"}, {"m": 20.0, "e": "g", "n": "Erdnussbutter"}], "sch": ["90 g Haferflocken mit 250 ml H-Milch verrühren (abends ansetzen oder morgens 5 Min. quellen lassen).", "100 g TK-Beeren und 1 gehäuften EL Erdnussbutter (20 g) dazu."], "mak": [619, 27, 20, 75], "mp": false, "w": ["10.11.2026", "17.11.2026"], "ex": [], "hin": [], "tags": ["Schnell"]}]}</script>
+<script>
+(function(){
+const D=JSON.parse(document.getElementById('daten').textContent);
+const R=D.rez;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm=s=>String(s).toLowerCase().replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u').replace(/ß/g,'ss').normalize('NFD').replace(/[̀-ͯ]/g,'');
+const SPEZ=['Frühstück','Hauptgericht','Snack','Shake'];
+const TAGS=['Meal-Prep','Asiatisch','Schnell','Proteinreich'];
+let filt='Alle', q='';
+
+/* Eigene Illustrationen */
+const S='viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"';
+const ICON={
+ oats:`<svg ${S}><path d="M8 30h48c0 14-10 24-24 24S8 44 8 30z" fill="var(--card)"/><path d="M14 30c3-5 8-7 18-7s15 2 18 7"/><circle cx="22" cy="26" r="2.4" fill="var(--f)"/><circle cx="30" cy="24" r="2.4" fill="#8f5aa8"/><circle cx="38" cy="26" r="2.4" fill="var(--f)"/><circle cx="44" cy="27" r="2" fill="#8f5aa8"/><path d="M46 10l-8 16" stroke-width="3"/></svg>`,
+ eggs:`<svg ${S}><path d="M22 54c-8 0-12-7-12-15 0-10 6-23 12-23s12 13 12 23c0 8-4 15-12 15z" fill="var(--card)"/><path d="M44 54c-8 0-12-6-12-13 0-9 5-19 12-19s12 10 12 19c0 7-4 13-12 13z" fill="var(--card)"/><circle cx="44" cy="42" r="6" fill="var(--mark)"/></svg>`,
+ shake:`<svg ${S}><path d="M22 16h20l-3 40H25z" fill="var(--card)"/><path d="M20 10h24v6H20z" fill="var(--accent)"/><path d="M24 30h16" opacity=".6"/><path d="M28 6h8v4"/><path d="M23.5 36h17l-1.5 20H25z" fill="var(--t-sh)" stroke="none"/></svg>`,
+ cup:`<svg ${S}><path d="M12 28h40l-4 22c-1 4-4 6-8 6H24c-4 0-7-2-8-6z" fill="var(--card)"/><path d="M18 28c2-6 8-9 14-9s12 3 14 9" fill="var(--card)"/><path d="M40 12l-6 14"/><circle cx="26" cy="23" r="3" fill="#c24b3a"/><path d="M33 22l4-2" stroke="var(--f)" stroke-width="3.5"/></svg>`,
+ crisp:`<svg ${S}><rect x="10" y="14" width="34" height="24" rx="3" fill="var(--card)" transform="rotate(-8 27 26)"/><rect x="20" y="26" width="34" height="24" rx="3" fill="var(--card)"/><path d="M24 33h26" stroke="var(--f)" stroke-width="5"/><circle cx="27" cy="43" r="1.3" fill="currentColor"/><circle cx="35" cy="44" r="1.3" fill="currentColor"/><circle cx="43" cy="42" r="1.3" fill="currentColor"/></svg>`,
+ pasta:`<svg ${S}><ellipse cx="32" cy="40" rx="26" ry="12" fill="var(--card)"/><path d="M18 38c4-8 10-10 14-6s-2 8 4 8 6-10 12-8"/><path d="M20 42c6 2 10-4 14 0s10 2 12-2"/><circle cx="28" cy="34" r="3" fill="#c24b3a" stroke="none"/><circle cx="40" cy="37" r="2.6" fill="#c24b3a" stroke="none"/><path d="M48 8l-6 26M54 10l-8 24"/></svg>`,
+ rice:`<svg ${S}><path d="M8 32h48c0 13-11 22-24 22S8 45 8 32z" fill="var(--card)"/><path d="M14 32c2-9 9-14 18-14s16 5 18 14" fill="var(--card)"/><path d="M24 25l2 1M32 22l1 2M38 26l2-1M28 29l1 1" opacity=".7"/><circle cx="22" cy="30" r="2.6" fill="var(--kh)" stroke="none"/><circle cx="40" cy="29" r="2.6" fill="#e07b39" stroke="none"/><path d="M40 6L28 26M48 8L34 26" stroke-width="3"/></svg>`,
+ pan:`<svg ${S}><ellipse cx="28" cy="36" rx="22" ry="9" fill="var(--card)"/><path d="M6 36c0 10 10 16 22 16s22-6 22-16"/><path d="M50 37l12-4" stroke-width="5"/><circle cx="20" cy="35" r="3" fill="var(--f)" stroke="none"/><circle cx="29" cy="37" r="3" fill="var(--kh)" stroke="none"/><circle cx="36" cy="34" r="3" fill="var(--f)" stroke="none"/><path d="M22 22c-3-4 3-6 0-10M32 22c-3-4 3-6 0-10" opacity=".55"/></svg>`,
+ carrot:`<svg ${S}><path d="M16 50l22-26c3-3 8-2 9 2 1 3 0 5-3 7L18 52z" fill="#e8893c"/><path d="M28 38l4 3M34 31l4 3"/><path d="M44 22c0-6 4-10 8-12M46 24c4-3 10-3 12 0M44 22c-4-4-4-10-2-12"/></svg>`,
+};
+function iconFor(t){
+ if(/Shake/.test(t))return'shake';
+ if(/Oats/.test(t))return'oats';
+ if(/Knäckebrot/.test(t))return'crisp';
+ if(/hartgekochte Eier/.test(t))return'eggs';
+ if(/Karotten/.test(t)&&/Frischkäse/.test(t))return'carrot';
+ if(/^(Magerquark|Skyr)/.test(t))return'cup';
+ if(/Nudeln|Spaghetti|Penne/.test(t))return'pasta';
+ if(/Kartoffel|Bauernfrühstück/.test(t))return'pan';
+ if(/Reis/.test(t))return'rice';
+ return'pan';
+}
+R.forEach(r=>{
+ r.icon=iconFor(r.t);
+ r.L=/^[0-9]/.test(r.t)?'#':r.t[0].toUpperCase().replace('Ä','A').replace('Ö','O').replace('Ü','U');
+ r.hay=norm([r.t,r.k,(r.tags||[]).join(' '),r.zut.map(z=>z.n||z.roh).join(' '),(r.ex||[]).join(' ')].join(' '));
+});
+
+/* Mengen wie in mengen.py */
+function fmtZ(z,port){
+ if(z.roh)return{a:z.roh,s:''};
+ let g=Math.round(z.m*port);
+ if(z.e==='ml')return{a:`${g} ml`,n:z.n,s:''};
+ const ex=[];
+ if(D.Q[z.n])ex.push(D.Q[z.n]);
+ if(D.STK[z.n])ex.push(`ca. ${Math.round(g/D.STK[z.n])} Stück Gr. L`);
+ if(D.LOEF[z.n]){const el=Math.round(g/D.LOEF[z.n]*2)/2;ex.push(el<1?`ca. ${Math.max(1,Math.round(g/D.LOEF[z.n]*3))} TL`:`ca. ${String(el).replace('.',',')} EL`)}
+ if(/^(Reis)$/.test(z.n))ex.push(`ergibt gekocht ca. ${Math.round(g*2.7/10)*10} bis ${Math.round(g*3/10)*10} g`);
+ if(/^Vollkorn(spaghetti|penne)$/.test(z.n))ex.push(`ergibt gekocht ca. ${Math.round(g*2.2/10)*10} bis ${Math.round(g*2.5/10)*10} g`);
+ return{a:`${g} g`,n:z.n,s:ex.join(' · ')};
+}
+
+/* Filter-Chips */
+function chips(){
+ const all=['Alle',...SPEZ,...TAGS];
+ $('chips').innerHTML=all.map(c=>`<button type="button" class="chip" id="chip-${norm(c)}" aria-pressed="${c===filt}" data-c="${esc(c)}">${esc(c)}</button>`).join('');
+ $('chips').querySelectorAll('.chip').forEach(b=>b.onclick=()=>{filt=b.dataset.c;try{localStorage.setItem('rb-filter',filt)}catch(e){};chips();list()});
+}
+function hl(t,words){
+ if(!words.length)return esc(t);
+ const nt=norm(t);const marks=new Array(t.length).fill(false);
+ words.forEach(w=>{let i=nt.indexOf(w);while(i>-1&&w){for(let k=i;k<i+w.length&&k<t.length;k++)marks[k]=true;i=nt.indexOf(w,i+w.length)}});
+ let o='',on=false;
+ for(let i=0;i<t.length;i++){if(marks[i]&&!on){o+='<mark>';on=true}if(!marks[i]&&on){o+='</mark>';on=false}o+=esc(t[i])}
+ return o+(on?'</mark>':'');
+}
+function list(){
+ const words=norm(q).split(/\s+/).filter(Boolean);
+ const vis=R.filter(r=>(filt==='Alle'||r.k===filt||(r.tags||[]).includes(filt))&&words.every(w=>r.hay.includes(w)));
+ $('count').textContent=vis.length===R.length?`${R.length} Gerichte, von A bis Z`:`${vis.length} von ${R.length} Gerichten`;
+ $('clr').hidden=!q;
+ const groups={};vis.forEach(r=>(groups[r.L]=groups[r.L]||[]).push(r));
+ const keys=Object.keys(groups).sort((a,b)=>a==='#'?-1:b==='#'?1:a.localeCompare(b,'de'));
+ $('list').innerHTML=keys.length?keys.map(L=>`<section class="grp" id="g-${L==='#'?'0':L}"><div class="letter">${L}</div>${groups[L].map(r=>card(r,words)).join('')}</section>`).join('')
+  :`<div class="empty">${ICON.pan}<div><b>Nichts gefunden.</b><br>Versuch ein anderes Wort, zum Beispiel eine Zutat wie „Ei“ oder „Hähnchen“.</div></div>`;
+ $('list').querySelectorAll('.card').forEach(b=>b.onclick=()=>open(b.dataset.id));
+ rail(keys);
+}
+function card(r,words){
+ const m=r.mak;
+ return `<button type="button" class="card" data-id="${r.id}"><span class="tile k-${r.k}">${ICON[r.icon]}</span><span class="ct"><h3>${hl(r.t,words)}</h3><span class="meta">${r.z?`<span>⏱ ${r.z} Min.${r.zg?'*':''}</span>`:''}${m?`<span>${m[0]} kcal</span><span>${m[1]} g Protein</span>`:''}</span>${(r.tags||[]).length?`<span class="tags">${r.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</span>`:''}</span></button>`;
+}
+function rail(keys){
+ const L=['#',...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+ $('rail').innerHTML=L.map(l=>`<button type="button" data-l="${l}" ${keys.includes(l)?'':'disabled'} aria-label="Buchstabe ${l==='#'?'Zahl':l}">${l}</button>`).join('');
+ const go=l=>{const el=$('g-'+(l==='#'?'0':l));if(el)el.scrollIntoView({block:'start'})};
+ $('rail').querySelectorAll('button').forEach(b=>b.onclick=()=>go(b.dataset.l));
+ // Mit dem Finger über die Leiste streichen wie in der iPhone-Kontaktliste
+ $('rail').ontouchmove=e=>{const t=e.touches[0];const el=document.elementFromPoint(t.clientX,t.clientY);if(el&&el.dataset&&el.dataset.l&&!el.disabled)go(el.dataset.l);e.preventDefault()};
+}
+
+/* Detailansicht */
+let cur=null,port=1,lastScroll=0,pushed=false;
+function open(id){if(location.hash!=='#'+id){pushed=true;location.hash=id}else show(id)}
+function show(id){
+ const r=R.find(x=>x.id===id);const sh=$('sheet');
+ if(!r){if(!sh.hidden){sh.hidden=true;document.body.style.overflow='';window.scrollTo(0,lastScroll)}cur=null;return}
+ if(sh.hidden)lastScroll=window.scrollY;
+ cur=r;port=r.p;sh.hidden=false;document.body.style.overflow='hidden';sh.scrollTop=0;detail();
+ setTimeout(()=>{const b=sh.querySelector('.back');if(b)b.focus({preventScroll:true})},30);
+}
+function detail(){
+ const r=cur,m=r.mak;
+ const kc=m?[m[1]*4,m[2]*9,m[3]*4]:[0,0,0];const sum=kc.reduce((a,b)=>a+b,0)||1;
+ const pct=kc.map(v=>Math.round(v/sum*100));
+ $('sheet').innerHTML=`<div class="sheet-in">
+ <div class="top"><button type="button" class="back" id="back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>Alle Rezepte</button></div>
+ <div class="dhead"><span class="tile k-${r.k}">${ICON[r.icon]}</span><div><div class="kat">${esc(r.k)}${r.mp?' · Meal-Prep':''}</div><h2 id="dtitle">${esc(r.t)}</h2></div></div>
+ ${m?`<div><div class="facts"><div><b>${m[0]}</b><span>kcal</span></div><div><b>${m[1]} g</b><span>Protein</span></div><div><b>${m[2]} g</b><span>Fett</span></div><div><b>${m[3]} g</b><span>Kohlenhydr.</span></div></div>
+ <div style="margin-top:10px"><div class="mbar" role="img" aria-label="Kalorienanteile: Protein ${pct[0]} %, Fett ${pct[1]} %, Kohlenhydrate ${pct[2]} %"><i style="width:${pct[0]}%;background:var(--p)"></i><i style="width:${pct[1]}%;background:var(--f)"></i><i style="width:${pct[2]}%;background:var(--kh)"></i></div>
+ <div class="mleg"><span><i style="background:var(--p)"></i>Protein ${pct[0]} %</span><span><i style="background:var(--f)"></i>Fett ${pct[1]} %</span><span><i style="background:var(--kh)"></i>KH ${pct[2]} %</span><span>· pro Portion</span>${r.z?`<span>· ⏱ ca. ${r.z} Min.${r.zg?' (geschätzt)':''}</span>`:''}</div></div></div>`:''}
+ <section class="sec"><h3>Zutaten <span class="stepper"><button type="button" id="pm" aria-label="Eine Portion weniger" ${port<=1?'disabled':''}>−</button><output id="pv">${port} Portion${port>1?'en':''}</output><button type="button" id="pp" aria-label="Eine Portion mehr" ${port>=4?'disabled':''}>+</button></span></h3>
+ <ul class="ing">${r.zut.map((z,i)=>{const f=fmtZ(z,port);return `<li><label for="z${i}"><input type="checkbox" id="z${i}"><span class="txt"><span class="amt">${esc(f.a)}</span> ${esc(f.n||'')}${f.s?`<br><span class="st">${esc(f.s)}</span>`:''}</span></label></li>`}).join('')}</ul>
+ ${(r.ex||[]).length?`<p class="ex"><b>Außerdem:</b> ${r.ex.map(esc).join(' · ')}</p>`:''}
+ ${port!==r.p?`<p class="note">Die Anleitung unten nennt Mengen für ${r.p} Portion${r.p>1?'en':''}. Die Zutatenliste oben ist auf ${port} umgerechnet.</p>`:''}
+ ${r.mp&&port===r.p?`<p class="small">Doppelt kochen: Die 2. Portion ist das Mittagessen am nächsten Tag.</p>`:''}</section>
+ <section class="sec"><h3>Zubereitung</h3><ol class="steps">${r.sch.map(s=>`<li tabindex="0"><span>${esc(s)}</span></li>`).join('')}</ol><p class="small">Tipp: Antippen hakt einen Schritt ab.</p></section>
+ ${(r.hin||[]).length?`<div class="note">${r.hin.map(esc).join('<br>')}</div>`:''}
+ <p class="small">Im Plan: Woche ${r.w.map(esc).join(', Woche ')}</p>
+ </div>`;
+ $('back').onclick=()=>{if(pushed){pushed=false;history.back()}else close()};
+ $('pm').onclick=()=>{port=Math.max(1,port-1);detail()};
+ $('pp').onclick=()=>{port=Math.min(4,port+1);detail()};
+ $('sheet').querySelectorAll('.ing input').forEach(cb=>cb.onchange=()=>cb.closest('li').classList.toggle('done',cb.checked));
+ $('sheet').querySelectorAll('.steps li').forEach(li=>{const t=()=>li.classList.toggle('done');li.onclick=t;li.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();t()}}});
+}
+function close(){location.hash='';show('')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur)close()});
+window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
+
+$('q').addEventListener('input',e=>{q=e.target.value;list()});
+$('clr').onclick=()=>{q='';$('q').value='';list();$('q').focus()};
+try{const f=localStorage.getItem('rb-filter');if(f&&(f==='Alle'||SPEZ.includes(f)||TAGS.includes(f)))filt=f}catch(e){}
+$('sub').textContent=`${R.length} Gerichte aus deinen Wochenplänen · Stand Woche ${D.stand}`;
+$('foot').textContent='* Zeit geschätzt. Neue Gerichte kommen sonntags mit dem Wochenplan dazu.';
+chips();list();
+if(location.hash.length>1)show(location.hash.slice(1));
+})();
+</script>
+
+</body></html>
