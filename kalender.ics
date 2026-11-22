@@ -650,4 +650,658 @@ DESCRIPTION:Einkauf Rewe (ca. 49.59 €)
 TRIGGER:PT9H
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-1@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261124T073000
+DTEND;TZID=Europe/Berlin:20261124T074500
+SUMMARY:Frühstück: Vorrats-Oats mit H-Milch\, Beeren\, Erdnussbutter
+DESCRIPTION:⏱ 5 Min. am Vorabend · Sonntagabend angesetzt\n\nZutaten: 9
+ 0 g Haferflocken (trocken)\, 250 ml H-Milch 1\,5%\, 100 g TK-Beeren (gefr
+ oren)\, 20 g Erdnussbutter (ca. 1 gehäufter EL)\n\n1. 90 g Haferflocken 
+ (trocken) mit 250 ml H-Milch verrühren (abends ansetzen oder morgens 5 M
+ in. quellen lassen).\n2. 100 g TK-Beeren (gefroren) und 20 g Erdnussbutte
+ r (ca. 1 gehäufter EL) dazu.\n\nPro Portion: 619 kcal\, 27 g Protein\, 2
+ 0 g Fett\, 75 g KH\n\nTag gesamt: 2907 kcal\, 191 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Frühstück: Vorrats-Oats mit H-Milch\, Beeren\, Erdnussbutter
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-2@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261124T130000
+DTEND;TZID=Europe/Berlin:20261124T133000
+SUMMARY:Mittag: Thunfisch-Ei-Reispfanne mit TK-Gemüse
+DESCRIPTION:⏱ 25 Min. · aus dem Vorrat\n\nZutaten: 110 g Reis (ungekoch
+ t/trocken\, gekocht ca. 330 g)\, 150 g Thunfisch (abgetropft)\, 120 g Ei 
+ (ohne Schale\, ca. 2 Stück Gr. L)\, 150 g TK-Asiagemüse (gefroren)\, 10
+  g Rapsöl (ca. 1 EL oder 2 TL)\, 15 g Sojasauce (ca. 1 EL)\n\n1. 110 g R
+ eis (ungekocht) mit 220 ml Wasser kochen (ca. 15 Min.\, ergibt ca. 330 g)
+ \, oder am Vortag mitkochen.\n2. 2 TL Öl (10 g) in die Pfanne\, 150 g TK
+ -Gemüse gefroren hinein\, 5 Min. braten.\n3. Reis und Thunfisch (1 Dose\
+ , 150 g abgetropft) dazu\, 2 Min. braten.\n4. 2 Eier (Gr. L) aufschlagen\
+ , dazugeben und unter Rühren stocken lassen. 15 g Sojasauce (ca. 1 EL)\,
+  Pfeffer.\n\nPro Portion: 864 kcal\, 66 g Protein\, 24 g Fett\, 93 g KH\n
+ \nTag gesamt: 2907 kcal\, 191 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mittag: Thunfisch-Ei-Reispfanne mit TK-Gemüse
+TRIGGER:-PT25M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-3@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261124T170000
+DTEND;TZID=Europe/Berlin:20261124T171500
+SUMMARY:Nach dem Training: Isoclear-Shake mit Wasser
+DESCRIPTION:⏱ 2 Min.\n\nZutaten: 1 Portion Isoclear\n\n1. 1 Portion Isoc
+ lear (Messlöffel laut Packung) mit 300 bis 400 ml kaltem Wasser schütte
+ ln.\n2. Optional: Wenn du dein Protein schon gut erreichst\, kannst du ih
+ n weglassen.\n\nPro Portion: 90 kcal\, 22 g Protein\, 0 g Fett\, 0 g KH\n
+ \nTag gesamt: 2907 kcal\, 191 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nach dem Training: Isoclear-Shake mit Wasser
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-4@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261124T190000
+DTEND;TZID=Europe/Berlin:20261124T193000
+SUMMARY:Abendessen: Mildes Bibimbap: Reis mit Hack\, Brokkoli\, Karotte un
+ d Spiegelei ×2
+DESCRIPTION:⏱ 35 Min. · doppelt kochen\, 2. Portion = Mittwoch Mittag\n
+ \nZutaten für 2 Portionen: 160 g Reis (ungekocht/trocken\, gekocht ca. 4
+ 80 g)\, 300 g Hackfleisch gemischt (roh)\, 300 g Brokkoli (roh\, geputzt)
+ \, 150 g Karotten (roh\, geschält)\, 120 g Ei (ohne Schale\, ca. 2 Stüc
+ k Gr. L)\, 15 g Rapsöl (ca. 1\,5 EL)\, 30 g Sojasauce (ca. 2 EL)\, 15 g 
+ Honig (ca. 2 TL)\n\n1. 160 g Reis (ungekocht) mit 320 ml Wasser und 1 Pri
+ se Salz aufkochen\, mit Deckel 15 Min. auf kleiner Hitze garen (ergibt ca
+ . 480 g).\n2. Soße verrühren: 30 g Sojasauce (ca. 2 EL)\, 15 g Honig (c
+ a. 2 TL)\, ½ TL Knoblauch-Granulat\, 2 EL Wasser.\n3. Brokkoli (300 g ge
+ putzt) in kleine Röschen teilen\, 2 Karotten (150 g geschält) in dünne
+  Stifte schneiden.\n4. 1 EL Öl (10 g) in der großen Pfanne erhitzen\, H
+ ack (300 g roh) krümelig braten (ca. 5 Min.)\, die Hälfte der Soße daz
+ u\, 1 Min. weiterbraten\, herausnehmen.\n5. Brokkoli und Karotten in die 
+ Pfanne\, 4 EL Wasser dazu\, abgedeckt 5 Min. dünsten. Restliche Soße da
+ zugeben.\n6. Gemüse an den Rand schieben\, 1 TL Öl (5 g) in die Mitte\,
+  2 Spiegeleier (Gr. L) 3 bis 4 Min. braten.\n7. Je die Hälfte Reis\, Hac
+ k\, Gemüse und 1 Spiegelei. Eine Portion essen\, die andere abgekühlt i
+ n die Box für Mittwoch.\n\nPro Portion: 906 kcal\, 48 g Protein\, 43 g F
+ ett\, 78 g KH\n\nTag gesamt: 2907 kcal\, 191 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Abendessen: Mildes Bibimbap: Reis mit Hack\, Brokkoli\, Karott
+ e und Spiegelei ×2
+TRIGGER:-PT35M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-5@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261124T213000
+DTEND;TZID=Europe/Berlin:20261124T214500
+SUMMARY:Spätsnack: Skyr mit Banane\, Honig und Nüssen
+DESCRIPTION:⏱ 5 Min.\n\nZutaten: 200 g Skyr\, 120 g Banane (ohne Schale)
+ \, 10 g Honig (ca. 1 gehäufter TL)\, 25 g Nusskernmischung\n\n1. 200 g S
+ kyr in eine Schüssel.\n2. 1 Banane (120 g ohne Schale) in Scheiben\, 10 
+ g Honig (ca. 1 gehäufter TL) und 25 g Nüsse drüber.\n\nPro Portion: 42
+ 8 kcal\, 28 g Protein\, 15 g Fett\, 42 g KH\n\nTag gesamt: 2907 kcal\, 19
+ 1 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Spätsnack: Skyr mit Banane\, Honig und Nüssen
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-6@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261125T073000
+DTEND;TZID=Europe/Berlin:20261125T074500
+SUMMARY:Frühstück: Overnight Oats Apfel-Zimt mit Skyr und Erdnussbutter
+DESCRIPTION:⏱ 5 Min. am Vorabend · am Vorabend ansetzen\n\nZutaten: 90 
+ g Haferflocken (trocken)\, 250 ml Milch 1\,5%\, 100 g Skyr\, 120 g Apfel 
+ (ohne Kerngehäuse)\, 20 g Erdnussbutter (ca. 1 gehäufter EL)\n\n1. Aben
+ ds 90 g Haferflocken (trocken)\, 250 ml Milch und 100 g Skyr in eine Dose
+  geben und verrühren.\n2. 1 Apfel (120 g ohne Kerngehäuse) klein würfe
+ ln\, dazu\, ½ TL Zimt und 20 g Erdnussbutter (ca. 1 gehäufter EL) unter
+ rühren. Deckel drauf\, Kühlschrank.\n\nPro Portion: 702 kcal\, 37 g Pro
+ tein\, 20 g Fett\, 86 g KH\n\nTag gesamt: 2880 kcal\, 185 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Frühstück: Overnight Oats Apfel-Zimt mit Skyr und Erdnussbut
+ ter
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-7@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261125T103000
+DTEND;TZID=Europe/Berlin:20261125T104500
+SUMMARY:Snack: 2 hartgekochte Eier\, 1 Banane und Nüsse
+DESCRIPTION:⏱ 12 Min. am Vorabend (Eier kochen) · Eier am Vorabend koch
+ en\n\nZutaten: 120 g Ei (ohne Schale\, ca. 2 Stück Gr. L)\, 120 g Banane
+  (ohne Schale)\, 20 g Nusskernmischung\n\n1. 2 Eier (Gr. L) am Vorabend 1
+ 0 Minuten kochen\, kalt abschrecken.\n2. Mit 1 Banane (120 g ohne Schale)
+  und 20 g Nüssen (eine kleine Handvoll) einpacken.\n\nPro Portion: 404 k
+ cal\, 20 g Protein\, 23 g Fett\, 26 g KH\n\nTag gesamt: 2880 kcal\, 185 g
+  Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Snack: 2 hartgekochte Eier\, 1 Banane und Nüsse
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-8@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261125T130000
+DTEND;TZID=Europe/Berlin:20261125T131500
+SUMMARY:Mittag: Mildes Bibimbap: Reis mit Hack\, Brokkoli\, Karotte und Sp
+ iegelei (Rest)
+DESCRIPTION:⏱ 3 Min. aufwärmen oder kalt · Rest von Dienstag\n\nRest v
+ om Vorabend: in der Pfanne mit 1 EL Wasser 3 Min. erwärmen oder kalt ess
+ en.\n\nPro Portion: 906 kcal\, 48 g Protein\n\nTag gesamt: 2880 kcal\, 18
+ 5 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mittag: Mildes Bibimbap: Reis mit Hack\, Brokkoli\, Karotte un
+ d Spiegelei (Rest)
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-9@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261125T170000
+DTEND;TZID=Europe/Berlin:20261125T171500
+SUMMARY:Nach dem Training: Isoclear-Shake mit Wasser
+DESCRIPTION:⏱ 2 Min.\n\nZutaten: 1 Portion Isoclear\n\n1. 1 Portion Isoc
+ lear (Messlöffel laut Packung) mit 300 bis 400 ml kaltem Wasser schütte
+ ln.\n2. Optional: Wenn du dein Protein schon gut erreichst\, kannst du ih
+ n weglassen.\n\nPro Portion: 90 kcal\, 22 g Protein\, 0 g Fett\, 0 g KH\n
+ \nTag gesamt: 2880 kcal\, 185 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nach dem Training: Isoclear-Shake mit Wasser
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-10@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261125T190000
+DTEND;TZID=Europe/Berlin:20261125T193000
+SUMMARY:Abendessen: Gnocchi-Pfanne mit Hähnchen\, Champignons und Frischk
+ äsesoße ×2
+DESCRIPTION:⏱ 30 Min. · doppelt kochen\, 2. Portion = Donnerstag Mittag
+ \n\nZutaten für 2 Portionen: 500 g Gnocchi (aus dem Kühlregal\, ungekoc
+ ht)\, 300 g Hähnchenbrust (roh)\, 250 g Champignons (roh\, geputzt)\, 60
+  g Zwiebel (geschält)\, 200 g Frischkäse leicht\, 100 ml Milch 1\,5%\, 
+ 10 g Rapsöl (ca. 1 EL oder 2 TL)\n\n1. Hähnchen (300 g roh) in Streifen
+ \, Champignons (250 g geputzt) in Scheiben\, ½ Zwiebel (60 g) würfeln.\
+ n2. 1 TL Öl (5 g) in der großen Pfanne erhitzen\, Hähnchen 5 bis 6 Min
+ . braten\, bis es innen nicht mehr rosa ist\, herausnehmen.\n3. 1 TL Öl 
+ (5 g) in die Pfanne\, Gnocchi (500 g) direkt aus der Packung 6 bis 8 Min.
+  goldbraun braten (nicht kochen)\, herausnehmen.\n4. Zwiebel und Champign
+ ons 5 Min. braten.\n5. 200 g Frischkäse leicht und 100 ml Milch dazu\, r
+ ühren\, bis eine Soße entsteht. Salz\, Pfeffer\, Italienische Kräuter.
+ \n6. Hähnchen und Gnocchi zurück\, 1 Min. mischen. Hälfte in die Box f
+ ür Donnerstag.\n\nPro Portion: 778 kcal\, 58 g Protein\, 19 g Fett\, 88 
+ g KH\n\nTag gesamt: 2880 kcal\, 185 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Abendessen: Gnocchi-Pfanne mit Hähnchen\, Champignons und Fri
+ schkäsesoße ×2
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-11@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261126T073000
+DTEND;TZID=Europe/Berlin:20261126T074500
+SUMMARY:Frühstück: Overnight Oats mit Banane und Skyr
+DESCRIPTION:⏱ 5 Min. am Vorabend · am Vorabend ansetzen\n\nZutaten: 90 
+ g Haferflocken (trocken)\, 250 ml Milch 1\,5%\, 100 g Skyr\, 120 g Banane
+  (ohne Schale)\n\n1. Abends 90 g Haferflocken (trocken)\, 250 ml Milch un
+ d 100 g Skyr verrühren\, Kühlschrank.\n2. Morgens 1 Banane (120 g ohne 
+ Schale) in Scheiben drauf. Etwas Zimt passt gut.\n\nPro Portion: 627 kcal
+ \, 33 g Protein\, 10 g Fett\, 93 g KH\n\nTag gesamt: 2767 kcal\, 203 g Pr
+ otein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Frühstück: Overnight Oats mit Banane und Skyr
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-12@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261126T103000
+DTEND;TZID=Europe/Berlin:20261126T104500
+SUMMARY:Snack: Körniger Frischkäse mit Karottensticks und Knäckebrot
+DESCRIPTION:⏱ 5 Min.\n\nZutaten: 200 g Körniger Frischkäse\, 100 g Kar
+ otten (roh\, geschält)\, 30 g Knäckebrot\n\n1. 200 g körnigen Frischk
+ äse in eine Dose\, mit Salz und Pfeffer würzen.\n2. 1 Karotte (100 g ge
+ schält) in Stifte schneiden\, zum Dippen dazu. Dazu 3 Scheiben Knäckebr
+ ot (30 g).\n\nPro Portion: 334 kcal\, 28 g Protein\, 9 g Fett\, 30 g KH\n
+ \nTag gesamt: 2767 kcal\, 203 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Snack: Körniger Frischkäse mit Karottensticks und Knäckebro
+ t
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-13@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261126T130000
+DTEND;TZID=Europe/Berlin:20261126T131500
+SUMMARY:Mittag: Gnocchi-Pfanne mit Hähnchen\, Champignons und Frischkäse
+ soße (Rest)
+DESCRIPTION:⏱ 3 Min. aufwärmen oder kalt · Rest von Mittwoch\n\nRest v
+ om Vorabend: in der Pfanne mit 1 EL Wasser 3 Min. erwärmen oder kalt ess
+ en.\n\nPro Portion: 778 kcal\, 58 g Protein\n\nTag gesamt: 2767 kcal\, 20
+ 3 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mittag: Gnocchi-Pfanne mit Hähnchen\, Champignons und Frischk
+ äsesoße (Rest)
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-14@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261126T170000
+DTEND;TZID=Europe/Berlin:20261126T171500
+SUMMARY:Nach dem Training: Isoclear-Shake mit Wasser
+DESCRIPTION:⏱ 2 Min.\n\nZutaten: 1 Portion Isoclear\n\n1. 1 Portion Isoc
+ lear (Messlöffel laut Packung) mit 300 bis 400 ml kaltem Wasser schütte
+ ln.\n2. Optional: Wenn du dein Protein schon gut erreichst\, kannst du ih
+ n weglassen.\n\nPro Portion: 90 kcal\, 22 g Protein\, 0 g Fett\, 0 g KH\n
+ \nTag gesamt: 2767 kcal\, 203 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nach dem Training: Isoclear-Shake mit Wasser
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-15@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261126T190000
+DTEND;TZID=Europe/Berlin:20261126T193000
+SUMMARY:Abendessen: Mie-Nudeln mit Pute\, Karotte und Lauch in Erdnuss-Soj
+ a-Soße ×2
+DESCRIPTION:⏱ 30 Min. · doppelt kochen\, 2. Portion = Freitag Mittag\n\
+ nZutaten für 2 Portionen: 150 g Mie-Nudeln (ungekocht/trocken\, gekocht 
+ ca. 380 g)\, 300 g Putenbrust (roh)\, 150 g Karotten (roh\, geschält)\, 
+ 200 g Lauch (geputzt)\, 30 g Erdnussbutter (ca. 2 EL)\, 40 g Sojasauce (c
+ a. 2\,5 EL)\, 20 g Honig (ca. 1 EL)\, 15 g Rapsöl (ca. 1\,5 EL)\n\n1. So
+ ße verrühren: 30 g Erdnussbutter (ca. 2 EL)\, 40 g Sojasauce (ca. 2\,5 
+ EL)\, 20 g Honig (ca. 1 EL)\, 6 EL heißes Wasser.\n2. 150 g Mie-Nudeln (
+ ungekocht) in kochendes Wasser geben\, nach Packung ca. 4 Min. ziehen las
+ sen\, abgießen (ergibt ca. 380 g).\n3. Pute (300 g roh) in Streifen schn
+ eiden. 2 Karotten (150 g geschält) in dünne Stifte\, Lauch (200 g geput
+ zt) längs halbieren\, gut waschen\, in Ringe.\n4. 1 EL Öl (10 g) in der
+  großen Pfanne erhitzen\, Pute 5 Min. braten\, bis sie innen nicht mehr 
+ rosa ist\, herausnehmen.\n5. 1 TL Öl (5 g)\, Karotten und Lauch 4 Min. b
+ raten.\n6. Pute\, Nudeln und Soße dazu\, 1 bis 2 Min. mischen. Hälfte i
+ n die Box für Freitag.\n\nPro Portion: 680 kcal\, 53 g Protein\, 18 g Fe
+ tt\, 73 g KH\n\nTag gesamt: 2767 kcal\, 203 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Abendessen: Mie-Nudeln mit Pute\, Karotte und Lauch in Erdnuss
+ -Soja-Soße ×2
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-16@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261126T213000
+DTEND;TZID=Europe/Berlin:20261126T214500
+SUMMARY:Spätsnack: Knäckebrot mit Erdnussbutter
+DESCRIPTION:⏱ 2 Min.\n\nZutaten: 40 g Knäckebrot\, 20 g Erdnussbutter (
+ ca. 1 gehäufter EL)\n\n1. 4 Scheiben Knäckebrot (40 g) mit 20 g Erdnuss
+ butter (ca. 1 gehäufter EL) bestreichen.\n\nPro Portion: 258 kcal\, 9 g 
+ Protein\, 10 g Fett\, 27 g KH\n\nTag gesamt: 2767 kcal\, 203 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Spätsnack: Knäckebrot mit Erdnussbutter
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-17@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261127T073000
+DTEND;TZID=Europe/Berlin:20261127T074500
+SUMMARY:Frühstück: Overnight Oats mit Banane\, Skyr und Erdnussbutter
+DESCRIPTION:⏱ 5 Min. am Vorabend · am Vorabend ansetzen\n\nZutaten: 90 
+ g Haferflocken (trocken)\, 250 ml Milch 1\,5%\, 100 g Skyr\, 120 g Banane
+  (ohne Schale)\, 30 g Erdnussbutter (ca. 2 EL)\n\n1. Abends 90 g Haferflo
+ cken (trocken)\, 250 ml Milch\, 100 g Skyr und 30 g Erdnussbutter (ca. 2 
+ EL) verrühren.\n2. Morgens 1 Banane (120 g ohne Schale) in Scheiben drau
+ f.\n\nPro Portion: 810 kcal\, 41 g Protein\, 25 g Fett\, 96 g KH\n\nTag g
+ esamt: 1921 kcal\, 134 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Frühstück: Overnight Oats mit Banane\, Skyr und Erdnussbutte
+ r
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-18@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261127T103000
+DTEND;TZID=Europe/Berlin:20261127T104500
+SUMMARY:Snack: 2 hartgekochte Eier\, 1 Apfel\, Nüsse
+DESCRIPTION:⏱ 12 Min. am Vorabend (Eier kochen) · auch für unterwegs\n
+ \nZutaten: 120 g Ei (ohne Schale\, ca. 2 Stück Gr. L)\, 150 g Apfel (ohn
+ e Kerngehäuse)\, 15 g Nusskernmischung\n\n1. 2 Eier (Gr. L) 10 Minuten k
+ ochen\, kalt abschrecken.\n2. Mit 1 Apfel (150 g) und 15 g Nüssen einpac
+ ken.\n\nPro Portion: 341 kcal\, 18 g Protein\, 20 g Fett\, 20 g KH\n\nTag
+  gesamt: 1921 kcal\, 134 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Snack: 2 hartgekochte Eier\, 1 Apfel\, Nüsse
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-19@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261127T130000
+DTEND;TZID=Europe/Berlin:20261127T131500
+SUMMARY:Mittag: Mie-Nudeln mit Pute\, Karotte und Lauch in Erdnuss-Soja-So
+ ße (Rest)
+DESCRIPTION:⏱ 3 Min. aufwärmen oder kalt · Rest von Donnerstag\n\nRest
+  vom Vorabend: in der Pfanne mit 1 EL Wasser 3 Min. erwärmen oder kalt e
+ ssen.\n\nPro Portion: 680 kcal\, 53 g Protein\n\nTag gesamt: 1921 kcal\, 
+ 134 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mittag: Mie-Nudeln mit Pute\, Karotte und Lauch in Erdnuss-Soj
+ a-Soße (Rest)
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-20@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261129T200000
+DTEND;TZID=Europe/Berlin:20261129T201500
+SUMMARY:Kleiner Snack: Knäckebrot mit Erdnussbutter
+DESCRIPTION:⏱ 2 Min. · aus dem Vorrat\n\nZutaten: 40 g Knäckebrot\, 20
+  g Erdnussbutter (ca. 1 gehäufter EL)\n\n1. 4 Scheiben Knäckebrot (40 g
+ ) mit 20 g Erdnussbutter (ca. 1 gehäufter EL) bestreichen.\n\nPro Portio
+ n: 258 kcal\, 9 g Protein\, 10 g Fett\, 27 g KH\n\nTag gesamt: 258 kcal\,
+  9 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Kleiner Snack: Knäckebrot mit Erdnussbutter
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-21@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261130T073000
+DTEND;TZID=Europe/Berlin:20261130T074500
+SUMMARY:Frühstück: Vorrats-Oats mit H-Milch\, Beeren\, Erdnussbutter
+DESCRIPTION:⏱ 5 Min. am Vorabend · Sonntagabend angesetzt\n\nZutaten: 9
+ 0 g Haferflocken (trocken)\, 250 ml H-Milch 1\,5%\, 100 g TK-Beeren (gefr
+ oren)\, 20 g Erdnussbutter (ca. 1 gehäufter EL)\n\n1. 90 g Haferflocken 
+ (trocken) mit 250 ml H-Milch verrühren (abends ansetzen oder morgens 5 M
+ in. quellen lassen).\n2. 100 g TK-Beeren (gefroren) und 20 g Erdnussbutte
+ r (ca. 1 gehäufter EL) dazu.\n\nPro Portion: 619 kcal\, 27 g Protein\, 2
+ 0 g Fett\, 75 g KH\n\nTag gesamt: 2849 kcal\, 188 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Frühstück: Vorrats-Oats mit H-Milch\, Beeren\, Erdnussbutter
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-22@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261130T103000
+DTEND;TZID=Europe/Berlin:20261130T104500
+SUMMARY:Snack: 2 hartgekochte Eier\, 1 Apfel\, Nüsse
+DESCRIPTION:⏱ 12 Min. am Vorabend (Eier kochen) · Eier Sonntagabend koc
+ hen\n\nZutaten: 120 g Ei (ohne Schale\, ca. 2 Stück Gr. L)\, 150 g Apfel
+  (ohne Kerngehäuse)\, 15 g Nusskernmischung\n\n1. 2 Eier (Gr. L) 10 Minu
+ ten kochen\, kalt abschrecken.\n2. Mit 1 Apfel (150 g) und 15 g Nüssen e
+ inpacken.\n\nPro Portion: 341 kcal\, 18 g Protein\, 20 g Fett\, 20 g KH\n
+ \nTag gesamt: 2849 kcal\, 188 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Snack: 2 hartgekochte Eier\, 1 Apfel\, Nüsse
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-23@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261130T130000
+DTEND;TZID=Europe/Berlin:20261130T133000
+SUMMARY:Mittag: Vollkornpenne mit Thunfisch-Tomatensoße
+DESCRIPTION:⏱ 25 Min. · morgens kochen oder Sonntagabend\n\nZutaten: 13
+ 0 g Vollkornpenne (ungekocht/trocken\, gekocht ca. 310 g)\, 150 g Thunfis
+ ch (abgetropft)\, 400 g Stückige Tomaten (Dose\, mit Saft)\, 40 g Zwiebe
+ l (geschält)\, 10 g Rapsöl (ca. 1 EL oder 2 TL)\n\n1. 130 g Vollkornpen
+ ne (ungekocht) in Salzwasser nach Packung kochen (ca. 10 Min.)\, abgieße
+ n (ergibt ca. 310 g).\n2. ½ kleine Zwiebel (40 g) würfeln\, in 1 EL Öl
+  (10 g) 2 Min. braten.\n3. Stückige Tomaten (1 Dose\, 400 g) dazu\, 5 Mi
+ n. köcheln\, mit Salz\, Pfeffer\, Italienischen Kräutern würzen.\n4. T
+ hunfisch (1 Dose\, 150 g abgetropft) dazu\, kurz warm machen\, mit den Nu
+ deln mischen.\n\nPro Portion: 810 kcal\, 59 g Protein\, 16 g Fett\, 100 g
+  KH\n\nTag gesamt: 2849 kcal\, 188 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mittag: Vollkornpenne mit Thunfisch-Tomatensoße
+TRIGGER:-PT25M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-24@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261130T170000
+DTEND;TZID=Europe/Berlin:20261130T171500
+SUMMARY:Nach dem Training: Isoclear-Shake mit Wasser
+DESCRIPTION:⏱ 2 Min.\n\nZutaten: 1 Portion Isoclear\n\n1. 1 Portion Isoc
+ lear (Messlöffel laut Packung) mit 300 bis 400 ml kaltem Wasser schütte
+ ln.\n2. Optional: Wenn du dein Protein schon gut erreichst\, kannst du ih
+ n weglassen.\n\nPro Portion: 90 kcal\, 22 g Protein\, 0 g Fett\, 0 g KH\n
+ \nTag gesamt: 2849 kcal\, 188 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Nach dem Training: Isoclear-Shake mit Wasser
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-25@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261130T190000
+DTEND;TZID=Europe/Berlin:20261130T193000
+SUMMARY:Abendessen: Pfannkuchen mit Apfel-Zimt-Quark
+DESCRIPTION:⏱ 30 Min.\n\nZutaten: 100 g Weizenmehl (Type 405)\, 200 ml H
+ -Milch 1\,5%\, 120 g Ei (ohne Schale\, ca. 2 Stück Gr. L)\, 10 g Rapsöl
+  (ca. 1 EL oder 2 TL)\, 250 g Magerquark\, 150 g Apfel (ohne Kerngehäuse
+ )\, 15 g Honig (ca. 2 TL)\n\n1. Teig: 100 g Mehl\, 200 ml H-Milch\, 2 Eie
+ r (Gr. L) und 1 Prise Salz glatt rühren\, 5 Min. stehen lassen.\n2. 2 TL
+  Öl (10 g) auf 3 Pfannkuchen verteilen: vor jedem gut ½ TL Öl in die g
+ roße Pfanne\, dann nacheinander 3 dünne Pfannkuchen backen\, je ca. 2 M
+ in. pro Seite.\n3. Quark: 250 g Magerquark mit 2 EL Wasser glatt rühren\
+ , 1 Apfel (150 g) reiben oder würfeln\, dazu\, 15 g Honig (ca. 2 TL) und
+  ½ TL Zimt.\n4. Pfannkuchen mit dem Quark füllen oder dazu essen.\n\nPr
+ o Portion: 989 kcal\, 62 g Protein\, 26 g Fett\, 121 g KH\n\nTag gesamt: 
+ 2849 kcal\, 188 g Protein
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Abendessen: Pfannkuchen mit Apfel-Zimt-Quark
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-26@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261122T210000
+DTEND;TZID=Europe/Berlin:20261122T210500
+SUMMARY:Vorbereiten: Oats für Dienstag ansetzen
+DESCRIPTION:⏱ 5 Min.\n\nVorrats-Oats für Di: 90 g Haferflocken (trocken
+ )\, 250 ml H-Milch\, 100 g TK-Beeren (gefroren)\, 20 g Erdnussbutter (ca.
+  1 gehäufter EL). Deckel drauf\, Kühlschrank.
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vorbereiten: Oats für Dienstag ansetzen
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-27@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261124T210000
+DTEND;TZID=Europe/Berlin:20261124T211500
+SUMMARY:Vorbereiten: Oats + Eier für morgen
+DESCRIPTION:⏱ 15 Min.\n\nOats Apfel-Zimt: 90 g Haferflocken (trocken)\, 
+ 250 ml Milch\, 100 g Skyr\, 1 Apfel (120 g) gewürfelt\, ½ TL Zimt\, 20 
+ g Erdnussbutter (ca. 1 gehäufter EL).\n2 Eier (Gr. L) 10 Min. kochen\, k
+ alt abschrecken.
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vorbereiten: Oats + Eier für morgen
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-28@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261125T210000
+DTEND;TZID=Europe/Berlin:20261125T210500
+SUMMARY:Vorbereiten: Oats für morgen ansetzen
+DESCRIPTION:⏱ 5 Min.\n\nOats Banane-Skyr: 90 g Haferflocken (trocken)\, 
+ 250 ml Milch\, 100 g Skyr. Banane morgens dazu.
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vorbereiten: Oats für morgen ansetzen
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-29@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261126T210000
+DTEND;TZID=Europe/Berlin:20261126T211500
+SUMMARY:Vorbereiten: Oats + Eier für morgen
+DESCRIPTION:⏱ 15 Min.\n\nOats: 90 g Haferflocken (trocken)\, 250 ml Milc
+ h\, 100 g Skyr\, 30 g Erdnussbutter (ca. 2 EL). Banane morgens dazu.\n2 E
+ ier (Gr. L) 10 Min. kochen\, kalt abschrecken.
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vorbereiten: Oats + Eier für morgen
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-30@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;TZID=Europe/Berlin:20261129T210000
+DTEND;TZID=Europe/Berlin:20261129T211500
+SUMMARY:Vorbereiten: Oats für Mo + Di\, Eier für Mo
+DESCRIPTION:⏱ 15 Min.\n\n2 Gläser Vorrats-Oats: je 90 g Haferflocken (t
+ rocken)\, 250 ml H-Milch\, 100 g TK-Beeren\, 20 g Erdnussbutter.\n2 Eier 
+ (Gr. L) 10 Min. kochen.\nOats mit Milch halten 2 bis 3 Tage\, deshalb nic
+ ht weiter vorbereiten.
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vorbereiten: Oats für Mo + Di\, Eier für Mo
+TRIGGER:-PT0M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-31@jakob-plan
+DTSTAMP:20261122T173700Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Einkauf Rewe (ca. 40.54 €)
+DESCRIPTION:Einkaufsliste in Laufreihenfolge:\n[Obst & Gemüse] Bananen\, 
+ 4 Stück (ca. 550 g) (ca. 0.99 €)\n[Obst & Gemüse] Äpfel (regional)\,
+  4 Stück (ca. 650 g) (ca. 1.59 €)\n[Obst & Gemüse] Karotten (regional
+ \, lose)\, ca. 400 g (5 Stück) (ca. 0.75 €)\n[Obst & Gemüse] Brokkoli
+ \, 1 kleiner Kopf (ca. 400 g\, geputzt ca. 300 g) (ca. 1.29 €)\n[Obst &
+  Gemüse] Lauch (Porree)\, 1 kleine Stange (ca. 250 g) (ca. 0.99 €)\n[O
+ bst & Gemüse] Champignons braun\, 250 g (ca. 1.49 €)\n[Fleisch] Hackfl
+ eisch gemischt\, 300 g (Theke) oder kleinste Packung (ca. 3.00 €)\n[Fle
+ isch] Hähnchenbrustfilet\, 300 g (Theke) oder kleinste Packung (ca. 3.90
+  €)\n[Fleisch] Putenbrust / Putenschnitzel\, 300 g (Theke) oder kleinst
+ e Packung (ca. 4.20 €)\n[Milch\, Käse\, Eier] Bio-Milch 1\,5 % (frisch
+ )\, 1 l (ca. 1.39 €)\n[Milch\, Käse\, Eier] Skyr natur\, 500 g (ca. 1.
+ 69 €)\n[Milch\, Käse\, Eier] Magerquark\, 250 g (ca. 0.69 €)\n[Milch
+ \, Käse\, Eier] Körniger Frischkäse\, 200 g (ca. 0.99 €)\n[Milch\, K
+ äse\, Eier] Frischkäse leicht (natur oder Kräuter)\, 200 g (ca. 0.99 
+ €)\n[Milch\, Käse\, Eier] Gnocchi (Kühlregal)\, 500 g (ca. 1.29 €)\
+ n[Milch\, Käse\, Eier] Bio-Eier (Größe L)\, 2 × 6 Stück (ca. 4.98 
+ €)\n[Frühstück & Snacks] Haferflocken (kernig)\, 500 g (ca. 0.79 €)
+ \n[Frühstück & Snacks] H-Milch 1\,5 %\, 1 l (ca. 1.09 €)\n[Frühstüc
+ k & Snacks] Erdnussbutter (Erdnusscreme)\, 350 g (ca. 2.29 €)\n[Nudeln\
+ , Reis\, Konserven] Weizenmehl Type 405\, 1 kg (ca. 0.79 €)\n[Nudeln\, 
+ Reis\, Konserven] Mie-Nudeln\, 250 g (ca. 1.29 €)\n[Nudeln\, Reis\, Kon
+ serven] Stückige Tomaten\, 1 Dose à 400 g (ca. 0.69 €)\n[Nudeln\, Rei
+ s\, Konserven] Thunfisch in eigenem Saft\, 1 Dose à 185 g (ca. 1.59 €)
+ \n[Tiefkühl] TK-Asia-Gemüse (ohne Soße)\, 750 g (ca. 1.79 €)\n\nNich
+ t kaufen\, ist noch da: Reis\, Penne\, Spaghetti\, Nüsse\, Knäckebrot\,
+  TK-Beeren\, Zwiebeln\, Honig\, Öl\, Sojasauce\, Gewürze.\nAbhaken: htt
+ ps://zmeezyy.github.io/ernaehrung-kalender/einkauf.html
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Einkauf Rewe (ca. 40.54 €)
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
 END:VCALENDAR
