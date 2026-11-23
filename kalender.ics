@@ -655,19 +655,19 @@ UID:ernaehrung-2026-11-24-1@jakob-plan
 DTSTAMP:20261123T170000Z
 DTSTART;TZID=Europe/Berlin:20261124T073000
 DTEND;TZID=Europe/Berlin:20261124T074500
-SUMMARY:Frühstück: Overnight Oats Beeren mit Quark und Pistazien
+SUMMARY:Frühstück: Overnight Oats Beeren mit Quark und Cashews
 DESCRIPTION:⏱ 5 Min. am Vorabend · Montagabend angesetzt\n\nZutaten: 70
   g Haferflocken (trocken)\, 200 ml Milch 1\,5%\, 150 g Magerquark\, 100 g
-  TK-Beeren (gefroren)\, 10 g Honig (ca. 1 gehäufter TL)\, 15 g Pistazien
- \n\n1. Montagabend: 70 g Haferflocken (trocken)\, 200 ml Milch\, 150 g Ma
- gerquark\, 100 g TK-Beeren (gefroren) und 10 g Honig (ca. 1 TL) in ein Gl
- as\, verrühren\, Deckel drauf\, Kühlschrank.\n2. Morgens 15 g Pistazien
-  drüber.\n\nPro Portion: 620 kcal\, 38 g Protein\, 16 g Fett\, 74 g KH\n
- \nTag gesamt: 3015 kcal\, 217 g Protein
+  TK-Beeren (gefroren)\, 10 g Honig (ca. 1 gehäufter TL)\, 15 g Cashew-Mi
+ x\n\n1. Montagabend: 70 g Haferflocken (trocken)\, 200 ml Milch\, 150 g M
+ agerquark\, 100 g TK-Beeren (gefroren) und 10 g Honig (ca. 1 TL) in ein G
+ las\, verrühren\, Deckel drauf\, Kühlschrank.\n2. Morgens 15 g Cashew-M
+ ix drüber.\n\nPro Portion: 620 kcal\, 38 g Protein\, 16 g Fett\, 76 g KH
+ \n\nTag gesamt: 3015 kcal\, 217 g Protein
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Frühstück: Overnight Oats Beeren mit Quark und Pistazien
+DESCRIPTION:Frühstück: Overnight Oats Beeren mit Quark und Cashews
 TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
@@ -1092,7 +1092,7 @@ DESCRIPTION:⏱ 5 Min. am Vorabend · am Vorabend ansetzen\n\nZutaten: 70
  nig (ca. 1 gehäufter TL) in ein Glas geben\, verrühren\, Deckel drauf\,
   Kühlschrank.\n2. Morgens 1 Banane (100 g ohne Schale) in Scheiben drauf
  .\n\nPro Portion: 545 kcal\, 29 g Protein\, 8 g Fett\, 82 g KH\n\nTag ges
- amt: 1652 kcal\, 82 g Protein
+ amt: 1652 kcal\, 81 g Protein
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1114,7 +1114,7 @@ DESCRIPTION:⏱ 5 Min. · um 12:00 mixen\, bis 14:00 trinken\n\nZutaten: 3
  gekühlt bis spätestens ca. 14:00 trinken (Richtwert: Milchgetränke nic
  ht länger als ca. 2 Std. ohne Kühlung). Den Rest dann lieber wegschütt
  en.\n\nPro Portion: 450 kcal\, 18 g Protein\, 8 g Fett\, 71 g KH\n\nTag g
- esamt: 1652 kcal\, 82 g Protein
+ esamt: 1652 kcal\, 81 g Protein
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1127,21 +1127,21 @@ UID:ernaehrung-2026-11-24-21@jakob-plan
 DTSTAMP:20261123T170000Z
 DTSTART;TZID=Europe/Berlin:20261127T150000
 DTEND;TZID=Europe/Berlin:20261127T151500
-SUMMARY:Zug: Käse-Ei-Sandwiches für den Zug\, dazu Pistazien
+SUMMARY:Zug: Käse-Ei-Sandwiches für den Zug\, dazu Cashews
 DESCRIPTION:⏱ 10 Min. · um 12:00 machen\n\nZutaten: 100 g Vollkorntoast
   (ca. 4 Scheiben)\, 60 g Gouda (ca. 3 Scheiben)\, 60 g Ei (ohne Schale\, 
- ca. 1 Stück Gr. L)\, 20 g Pistazien\n\n1. Das Ei hast du Donnerstagabend
-  im Eierkocher hart gekocht. Schälen und in Scheiben schneiden.\n2. Um c
- a. 12:00: 4 Scheiben Vollkorntoast\, 3 Scheiben Gouda (60 g) und die Eisc
- heiben zu 2 Sandwiches legen\, im Sandwichmaker 3 bis 4 Min. backen.\n3. 
- Kurz abkühlen lassen\, in eine Box oder in Butterbrotpapier packen. 20 g
-  Pistazien in eine kleine Dose. Am besten bis ca. 16:00 essen.\n\nPro Por
- tion: 657 kcal\, 35 g Protein\, 36 g Fett\, 46 g KH\n\nTag gesamt: 1652 k
- cal\, 82 g Protein
+ ca. 1 Stück Gr. L)\, 20 g Cashew-Mix\n\n1. Das Ei hast du Donnerstagaben
+ d im Eierkocher hart gekocht. Schälen und in Scheiben schneiden.\n2. Um 
+ ca. 12:00: 4 Scheiben Vollkorntoast\, 3 Scheiben Gouda (60 g) und die Eis
+ cheiben zu 2 Sandwiches legen\, im Sandwichmaker 3 bis 4 Min. backen.\n3.
+  Kurz abkühlen lassen\, in eine Box oder in Butterbrotpapier packen. 20 
+ g Cashew-Mix in eine kleine Dose. Am besten bis ca. 16:00 essen.\n\nPro P
+ ortion: 657 kcal\, 34 g Protein\, 35 g Fett\, 48 g KH\n\nTag gesamt: 1652
+  kcal\, 81 g Protein
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Zug: Käse-Ei-Sandwiches für den Zug\, dazu Pistazien
+DESCRIPTION:Zug: Käse-Ei-Sandwiches für den Zug\, dazu Cashews
 TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
@@ -1168,19 +1168,19 @@ UID:ernaehrung-2026-11-24-23@jakob-plan
 DTSTAMP:20261123T170000Z
 DTSTART;TZID=Europe/Berlin:20261130T073000
 DTEND;TZID=Europe/Berlin:20261130T074500
-SUMMARY:Frühstück: Overnight Oats Beeren mit Quark und Pistazien
+SUMMARY:Frühstück: Overnight Oats Beeren mit Quark und Cashews
 DESCRIPTION:⏱ 5 Min. am Vorabend · Sonntagabend angesetzt\n\nZutaten: 7
  0 g Haferflocken (trocken)\, 200 ml H-Milch 1\,5%\, 100 g Magerquark\, 10
- 0 g TK-Beeren (gefroren)\, 10 g Honig (ca. 1 gehäufter TL)\, 10 g Pistaz
- ien\n\n1. Abends 70 g Haferflocken (trocken)\, 200 ml H-Milch\, 100 g Mag
- erquark\, 10 g Honig (ca. 1 gehäufter TL) und 100 g TK-Beeren (gefroren\
- , tauen über Nacht auf) in ein Glas\, verrühren\, Kühlschrank.\n2. Mor
- gens 10 g Pistazien drüber.\n\nPro Portion: 557 kcal\, 31 g Protein\, 14
-  g Fett\, 71 g KH\n\nTag gesamt: 2973 kcal\, 206 g Protein
+ 0 g TK-Beeren (gefroren)\, 10 g Honig (ca. 1 gehäufter TL)\, 10 g Cashew
+ -Mix\n\n1. Abends 70 g Haferflocken (trocken)\, 200 ml H-Milch\, 100 g Ma
+ gerquark\, 10 g Honig (ca. 1 gehäufter TL) und 100 g TK-Beeren (gefroren
+ \, tauen über Nacht auf) in ein Glas\, verrühren\, Kühlschrank.\n2. Mo
+ rgens 10 g Cashew-Mix drüber.\n\nPro Portion: 557 kcal\, 31 g Protein\, 
+ 13 g Fett\, 72 g KH\n\nTag gesamt: 2973 kcal\, 206 g Protein
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Frühstück: Overnight Oats Beeren mit Quark und Pistazien
+DESCRIPTION:Frühstück: Overnight Oats Beeren mit Quark und Cashews
 TRIGGER:-PT0M
 END:VALARM
 END:VEVENT
