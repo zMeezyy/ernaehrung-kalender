@@ -652,774 +652,459 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-1@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261124T073000
-DTEND;TZID=Europe/Berlin:20261124T074500
-SUMMARY:Frühstück: Overnight Oats Beeren mit Quark und Cashews
-DESCRIPTION:⏱ 5 Min. am Vorabend · Montagabend angesetzt\n\nZutaten: 70
-  g Haferflocken (trocken)\, 200 ml Milch 1\,5%\, 150 g Magerquark\, 100 g
-  TK-Beeren (gefroren)\, 10 g Honig (ca. 1 gehäufter TL)\, 15 g Cashew-Mi
- x\n\n1. Montagabend: 70 g Haferflocken (trocken)\, 200 ml Milch\, 150 g M
- agerquark\, 100 g TK-Beeren (gefroren) und 10 g Honig (ca. 1 TL) in ein G
- las\, verrühren\, Deckel drauf\, Kühlschrank.\n2. Morgens 15 g Cashew-M
- ix drüber.\n\nPro Portion: 620 kcal\, 38 g Protein\, 16 g Fett\, 76 g KH
- \n\nTag gesamt: 3015 kcal\, 217 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261125T140000
+DTEND;TZID=Europe/Berlin:20261125T143000
+SUMMARY:🍽 Mittag: Eierreis Thunfisch ×2 · 861 kcal · 51 g P
+DESCRIPTION:Eierreis mit Thunfisch\, Wokgemüse und Karotten
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Frühstück: Overnight Oats Beeren mit Quark und Cashews
-TRIGGER:-PT0M
+DESCRIPTION:🍽 Mittag: Eierreis Thunfisch ×2 · 861 kcal · 51 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-2@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261124T100000
-DTEND;TZID=Europe/Berlin:20261124T101500
-SUMMARY:Snack: Vollkorntoast mit körnigem Frischkäse und Leberwurst\, da
- zu 1 Apfel
-DESCRIPTION:⏱ 5 Min. · aus den Resten\n\nZutaten: 50 g Vollkorntoast (c
- a. 2 Scheiben)\, 100 g Körniger Frischkäse\, 20 g Leberwurst\, 150 g Ap
- fel (ohne Kerngehäuse)\n\n1. 2 Scheiben Vollkorntoast (aus der alten Pac
- kung) toasten.\n2. Eine Scheibe mit 100 g körnigem Frischkäse belegen (
- Salz\, Pfeffer)\, die andere mit 20 g Leberwurst bestreichen.\n3. Dazu 1 
- Apfel.\n\nPro Portion: 364 kcal\, 20 g Protein\, 12 g Fett\, 41 g KH\n\nT
- ag gesamt: 3015 kcal\, 217 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261125T163000
+DTEND;TZID=Europe/Berlin:20261125T164500
+SUMMARY:🥤 Shake: Shake Apfel · 531 kcal · 16 g P
+DESCRIPTION:Vorrats-Shake Apfel-Zimt mit Erdnussbutter
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Snack: Vollkorntoast mit körnigem Frischkäse und Leberwurst\
- , dazu 1 Apfel
-TRIGGER:-PT0M
+DESCRIPTION:🥤 Shake: Shake Apfel · 531 kcal · 16 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-3@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261124T123000
-DTEND;TZID=Europe/Berlin:20261124T130000
-SUMMARY:Mittag: Eierreis mit Salat und Kräuterquark
-DESCRIPTION:⏱ 30 Min. · aus den Resten\n\nZutaten: 80 g Reis (ungekocht
- /trocken\, gekocht ca. 240 g)\, 180 g Ei (ohne Schale\, ca. 3 Stück Gr. 
- L)\, 5 g Butter (ca. 1 TL)\, 10 g Sojasauce (ca. 2 TL)\, 80 g Kopfsalat (
- gewaschen\, gezupft)\, 150 g Magerquark\, 50 g Exquisa 0\,2%\n\n1. 80 g R
- eis (trocken) in einem Sieb kalt waschen\, bis das Wasser fast klar ist. 
- In den Reiskocher\, ca. 120 ml Wasser dazu (Richtwert 1\,5-fache Menge\; 
- wenn dein Reiskocher Markierungen hat\, gelten die). Einschalten. Fertig\
- , wenn er auf Warmhalten springt (meist 20 bis 30 Min.).\n2. Kräuterquar
- k: 150 g Magerquark (der Rest)\, den Rest Exquisa (ca. 50 g)\, 1 bis 2 EL
-  Wasser\, Salz\, Pfeffer und ½ TL Kräuter der Provence glatt rühren.\n
- 3. Salat waschen\, trocken schütteln\, ca. 80 g in mundgerechte Stücke 
- zupfen.\n4. 3 Eier mit etwas Rührei-Gewürz verquirlen. 5 g Butter (ca. 
- 1 TL) in der Pfanne bei mittlerer Hitze schmelzen\, Eier hinein\, unter R
- ühren 2 Min. stocken lassen.\n5. Reis dazu\, 2 Min. mitbraten\, mit 10 g
-  Sojasauce (ca. 2 TL) würzen.\n6. Salat mit dem Kräuterquark dazu essen
- .\n\nPro Portion: 716 kcal\, 54 g Protein\, 22 g Fett\, 73 g KH\n\nTag ge
- samt: 3015 kcal\, 217 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261125T183000
+DTEND;TZID=Europe/Berlin:20261125T184500
+SUMMARY:💧 Isoclear: Isoclear · 90 kcal · 22 g P
+DESCRIPTION:Isoclear-Shake
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Mittag: Eierreis mit Salat und Kräuterquark
-TRIGGER:-PT30M
+DESCRIPTION:💧 Isoclear: Isoclear · 90 kcal · 22 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-4@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261124T163000
-DTEND;TZID=Europe/Berlin:20261124T164500
-SUMMARY:Shake: Shake Banane-Hafer mit Erdnussbutter
-DESCRIPTION:⏱ 5 Min.\n\nZutaten: 200 ml H-Milch 1\,5%\, 40 g Haferflocke
- n (trocken)\, 90 g Banane (ohne Schale)\, 80 g Magerquark\, 20 g Erdnussb
- utter (ca. 1 gehäufter EL)\, 10 g Honig (ca. 1 gehäufter TL)\n\n1. **Zu
- erst 200 ml H-Milch** in den Mixer\, dann 40 g Haferflocken. 20 Sek. mixe
- n\, damit der Hafer fein wird.\n2. 1 kleine Banane (90 g ohne Schale) in 
- Stücken\, 80 g Magerquark\, 20 g Erdnussbutter (ca. 1 gehäufter EL) und
-  10 g Honig (ca. 1 gehäufter TL) dazugeben.\n3. 30 bis 45 Sek. mixen\, b
- is alles glatt ist. Ergibt ca. 400 ml\, also dein Caipirinha-Glas fast vo
- ll. Zu dick? 2 bis 3 EL Wasser dazu.\n4. Gleich trinken. Danach Mixer sof
- ort mit warmem Wasser und 1 Tropfen Spülmittel 20 Sek. laufen lassen und
-  ausspülen.\n5. Keine gefrorenen Früchte in den Shake\, die schafft dei
- n Mixer nicht gut.\n6. Di bis Do zuerst die offene frische Milch nehmen\,
-  dann die H-Milch.\n\nPro Portion: 532 kcal\, 28 g Protein\, 16 g Fett\, 
- 64 g KH\n\nTag gesamt: 3015 kcal\, 217 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261125T184500
+DTEND;TZID=Europe/Berlin:20261125T190000
+SUMMARY:🍎 Snack: Toast + Apfel · 409 kcal · 22 g P
+DESCRIPTION:Toast mit körnigem Frischkäse und Leberwurst\, dazu 1 Apfel
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Shake: Shake Banane-Hafer mit Erdnussbutter
-TRIGGER:-PT0M
+DESCRIPTION:🍎 Snack: Toast + Apfel · 409 kcal · 22 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-5@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261124T183000
-DTEND;TZID=Europe/Berlin:20261124T184500
-SUMMARY:Isoclear-Shake: Isoclear-Shake mit Wasser
-DESCRIPTION:⏱ 2 Min.\n\nZutaten: 1 Portion Isoclear\n\n1. 1 Portion Isoc
- lear (Messlöffel laut Packung) mit 300 bis 400 ml kaltem Wasser schütte
- ln.\n\nPro Portion: 90 kcal\, 22 g Protein\, 0 g Fett\, 0 g KH\n\nTag ges
- amt: 3015 kcal\, 217 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261125T203000
+DTEND;TZID=Europe/Berlin:20261125T210000
+SUMMARY:🍳 Abendessen: Eierreis · 861 kcal · 51 g P
+DESCRIPTION:Eierreis mit Thunfisch\, Wokgemüse und Karotten
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Isoclear-Shake: Isoclear-Shake mit Wasser
-TRIGGER:-PT0M
+DESCRIPTION:🍳 Abendessen: Eierreis · 861 kcal · 51 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-6@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261124T203000
-DTEND;TZID=Europe/Berlin:20261124T210000
-SUMMARY:Abendessen: Airfryer-Hähnchen mit Honig-Soja\, Reis und Brokkoli 
- ×2
-DESCRIPTION:⏱ 35 Min. · doppelt kochen\, 2. Portion = Mittwoch Mittag\n
- \nZutaten für 2 Portionen: 350 g Hähnchenbrust (roh)\, 250 g Reis (unge
- kocht/trocken\, gekocht ca. 750 g)\, 200 g Brokkoli (roh\, geputzt)\, 25 
- g Sojasauce (ca. 1\,5 EL)\, 20 g Honig (ca. 1 EL)\n\n1. 250 g Reis (trock
- en) in einem Sieb kalt waschen\, bis das Wasser fast klar ist. In den Rei
- skocher\, ca. 375 ml Wasser dazu (Richtwert 1\,5-fache Menge\; wenn dein 
- Reiskocher Markierungen hat\, gelten die). Einschalten. Fertig\, wenn er 
- auf Warmhalten springt (meist 20 bis 30 Min.).\n2. Marinade in einer Sch
- üssel verrühren: 25 g Sojasauce (ca. 1\,5 EL)\, 20 g Honig (ca. 1 EL)\,
-  ½ TL Knoblauch granuliert\, ½ TL Paprika edelsüß.\n3. Hähnchen (350
-  g roh) auf einem Brett in ca. 3 cm große Würfel schneiden\, in der Mar
- inade wenden. Öl ist nicht nötig. Danach Hände und Brett mit Spülmitt
- el waschen.\n4. Airfryer (Ninja Dual Zone): Würfel in einen Korb legen\,
-  nebeneinander und nicht gestapelt. Funktion „Air Fry“\, 200 °C\, 12
-  Min. einstellen (wie genau\, steht in der Kurzanleitung deines Ninja). N
- ach 6 Min. den Korb herausziehen und kurz schütteln.\n5. Prüfen: das di
- ckste Stück aufschneiden. Innen muss es weiß sein\, ohne Rosa\, und der
-  Saft klar. Sonst noch 2 bis 3 Min.\n6. Brokkoli (200 g) in kleine Rösch
- en teilen. Wasser im Wasserkocher kochen\, ca. 3 cm hoch in einen Topf gi
- eßen\, Brokkoli hinein\, Deckel drauf\, 4 bis 5 Min. bei mittlerer Hitze
-  garen\, abgießen\, salzen.\n7. Halbe Menge Reis\, Hähnchen und Brokkol
- i essen. Die andere Hälfte in eine Box\, offen max. 1 Std. abkühlen las
- sen\, dann Deckel drauf und in den Kühlschrank (für Mittwoch).\n\nPro P
- ortion: 693 kcal\, 55 g Protein\, 3 g Fett\, 107 g KH\n\nTag gesamt: 3015
-  kcal\, 217 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261125T211500
+DTEND;TZID=Europe/Berlin:20261125T213000
+SUMMARY:📝 Für morgen vorbereiten
+DESCRIPTION:Oats Beeren für Do ansetzen (letzte Milch)
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Abendessen: Airfryer-Hähnchen mit Honig-Soja\, Reis und Brokk
- oli ×2
-TRIGGER:-PT35M
+DESCRIPTION:📝 Für morgen vorbereiten
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-7@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261125T073000
-DTEND;TZID=Europe/Berlin:20261125T074500
-SUMMARY:Frühstück: Overnight Oats Banane mit Quark
-DESCRIPTION:⏱ 5 Min. am Vorabend · am Vorabend ansetzen\n\nZutaten: 70 
- g Haferflocken (trocken)\, 200 ml H-Milch 1\,5%\, 100 g Magerquark\, 100 
- g Banane (ohne Schale)\, 10 g Honig (ca. 1 gehäufter TL)\n\n1. Abends 70
-  g Haferflocken (trocken)\, 200 ml H-Milch\, 100 g Magerquark und 10 g Ho
- nig (ca. 1 gehäufter TL) in ein Glas geben\, verrühren\, Deckel drauf\,
-  Kühlschrank.\n2. Morgens 1 Banane (100 g ohne Schale) in Scheiben drauf
- .\n\nPro Portion: 545 kcal\, 29 g Protein\, 8 g Fett\, 82 g KH\n\nTag ges
- amt: 2885 kcal\, 189 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261126T071500
+DTEND;TZID=Europe/Berlin:20261126T072000
+SUMMARY:⚖️ Wiegen (vor dem Frühstück)
+DESCRIPTION:Nüchtern wiegen\, Wert merken.
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Frühstück: Overnight Oats Banane mit Quark
-TRIGGER:-PT0M
+DESCRIPTION:⚖️ Wiegen (vor dem Frühstück)
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-8@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261125T100000
-DTEND;TZID=Europe/Berlin:20261125T101500
-SUMMARY:Snack: 2 Eier aus dem Eierkocher und 1 Apfel
-DESCRIPTION:⏱ 15 Min. am Vorabend (Eierkocher) · Eier am Vorabend koche
- n\n\nZutaten: 120 g Ei (ohne Schale\, ca. 2 Stück Gr. L)\, 150 g Apfel (
- ohne Kerngehäuse)\n\n1. Am Vorabend 2 Eier im Eierkocher hart kochen: Wa
- sser mit dem Messbecher deines Eierkochers für „hart“ einfüllen\, E
- ier anstechen (falls dein Eierkocher einen Dorn hat)\, einschalten.\n2. W
- enn er fertig ist (meist ein Signalton)\, Eier kalt abschrecken und in de
- n Kühlschrank.\n3. Morgens mit 1 Apfel einpacken.\n\nPro Portion: 245 kc
- al\, 15 g Protein\, 11 g Fett\, 19 g KH\n\nTag gesamt: 2885 kcal\, 189 g 
- Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261126T073000
+DTEND;TZID=Europe/Berlin:20261126T080000
+SUMMARY:🥣 Frühstück: Oats Beeren · 506 kcal · 19 g P
+DESCRIPTION:Overnight Oats Beeren mit Honig
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Snack: 2 Eier aus dem Eierkocher und 1 Apfel
-TRIGGER:-PT0M
+DESCRIPTION:🥣 Frühstück: Oats Beeren · 506 kcal · 19 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-9@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261125T123000
-DTEND;TZID=Europe/Berlin:20261125T124500
-SUMMARY:Mittag: Airfryer-Hähnchen mit Honig-Soja\, Reis und Brokkoli (Res
- t)
-DESCRIPTION:⏱ 3 Min. aufwärmen oder kalt · Rest von Dienstag\n\nRest v
- om Vorabend: in der Pfanne mit 1 EL Wasser 3 Min. erwärmen oder kalt ess
- en.\n\nPro Portion: 693 kcal\, 55 g Protein\n\nTag gesamt: 2885 kcal\, 18
- 9 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261126T100000
+DTEND;TZID=Europe/Berlin:20261126T101500
+SUMMARY:🍎 Snack: Toast Kräuter + Banane · 378 kcal · 10 g P
+DESCRIPTION:Toast mit Kräuterfrischkäse und Banane
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Mittag: Airfryer-Hähnchen mit Honig-Soja\, Reis und Brokkoli 
- (Rest)
-TRIGGER:-PT0M
+DESCRIPTION:🍎 Snack: Toast Kräuter + Banane · 378 kcal · 10 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-10@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261125T163000
-DTEND;TZID=Europe/Berlin:20261125T164500
-SUMMARY:Shake: Shake Banane-Hafer mit Erdnussbutter
-DESCRIPTION:⏱ 5 Min.\n\nZutaten: 200 ml H-Milch 1\,5%\, 40 g Haferflocke
- n (trocken)\, 90 g Banane (ohne Schale)\, 80 g Magerquark\, 20 g Erdnussb
- utter (ca. 1 gehäufter EL)\, 10 g Honig (ca. 1 gehäufter TL)\n\n1. **Zu
- erst 200 ml H-Milch** in den Mixer\, dann 40 g Haferflocken. 20 Sek. mixe
- n\, damit der Hafer fein wird.\n2. 1 kleine Banane (90 g ohne Schale) in 
- Stücken\, 80 g Magerquark\, 20 g Erdnussbutter (ca. 1 gehäufter EL) und
-  10 g Honig (ca. 1 gehäufter TL) dazugeben.\n3. 30 bis 45 Sek. mixen\, b
- is alles glatt ist. Ergibt ca. 400 ml\, also dein Caipirinha-Glas fast vo
- ll. Zu dick? 2 bis 3 EL Wasser dazu.\n4. Gleich trinken. Danach Mixer sof
- ort mit warmem Wasser und 1 Tropfen Spülmittel 20 Sek. laufen lassen und
-  ausspülen.\n5. Keine gefrorenen Früchte in den Shake\, die schafft dei
- n Mixer nicht gut.\n6. Di bis Do zuerst die offene frische Milch nehmen\,
-  dann die H-Milch.\n\nPro Portion: 532 kcal\, 28 g Protein\, 16 g Fett\, 
- 64 g KH\n\nTag gesamt: 2885 kcal\, 189 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261126T123000
+DTEND;TZID=Europe/Berlin:20261126T130000
+SUMMARY:🍽 Mittag: Rührei-Reis Erbsen · 691 kcal · 32 g P
+DESCRIPTION:Reis mit Rührei\, Erbsen und Gouda
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Shake: Shake Banane-Hafer mit Erdnussbutter
-TRIGGER:-PT0M
+DESCRIPTION:🍽 Mittag: Rührei-Reis Erbsen · 691 kcal · 32 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-11@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261125T183000
-DTEND;TZID=Europe/Berlin:20261125T184500
-SUMMARY:Isoclear-Shake: Isoclear-Shake mit Wasser
-DESCRIPTION:⏱ 2 Min.\n\nZutaten: 1 Portion Isoclear\n\n1. 1 Portion Isoc
- lear (Messlöffel laut Packung) mit 300 bis 400 ml kaltem Wasser schütte
- ln.\n\nPro Portion: 90 kcal\, 22 g Protein\, 0 g Fett\, 0 g KH\n\nTag ges
- amt: 2885 kcal\, 189 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261126T143000
+DTEND;TZID=Europe/Berlin:20261126T144500
+SUMMARY:🍎 Snack: Honigtoast + Apfel · 268 kcal · 6 g P
+DESCRIPTION:Toast mit Honig und Apfel
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Isoclear-Shake: Isoclear-Shake mit Wasser
-TRIGGER:-PT0M
+DESCRIPTION:🍎 Snack: Honigtoast + Apfel · 268 kcal · 6 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-12@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261125T203000
-DTEND;TZID=Europe/Berlin:20261125T210000
-SUMMARY:Abendessen: Hack-Reis-Pfanne mit Champignons und Karotte ×2
-DESCRIPTION:⏱ 35 Min. · doppelt kochen\, 2. Portion = Donnerstag Mittag
- \n\nZutaten für 2 Portionen: 300 g Hackfleisch gemischt (roh)\, 200 g Re
- is (ungekocht/trocken\, gekocht ca. 600 g)\, 250 g Champignons (roh\, gep
- utzt)\, 100 g Karotten (roh\, geschält)\, 60 g Zwiebel (geschält)\, 25 
- g Sojasauce (ca. 1\,5 EL)\n\n1. 200 g Reis (trocken) in einem Sieb kalt w
- aschen\, bis das Wasser fast klar ist. In den Reiskocher\, ca. 300 ml Was
- ser dazu (Richtwert 1\,5-fache Menge\; wenn dein Reiskocher Markierungen 
- hat\, gelten die). Einschalten. Fertig\, wenn er auf Warmhalten springt (
- meist 20 bis 30 Min.).\n2. 1 Zwiebel (60 g) fein würfeln\, 1 Karotte (10
- 0 g) schälen und grob reiben oder in dünne Scheiben schneiden\, Champig
- nons (250 g) in Scheiben schneiden.\n3. Große Pfanne ohne Öl auf hohe H
- itze. Hack (300 g roh) hinein\, mit dem Pfannenwender zerdrücken und 5 b
- is 6 Min. krümelig braten\, bis nichts mehr rosa ist. Das Fett vom Hack 
- reicht zum Braten. Mit Hackfleischgewürz würzen.\n4. Zwiebel und Karott
- e dazu\, 3 Min. braten\, dann die Champignons 4 Min. mitbraten.\n5. Reis 
- und 25 g Sojasauce (ca. 1\,5 EL) dazu\, 2 Min. mischen und braten.\n6. H
- älfte essen\, Hälfte in eine Box (abkühlen lassen\, dann Kühlschrank\
- , für Donnerstag).\n\nPro Portion: 780 kcal\, 40 g Protein\, 30 g Fett\,
-  84 g KH\n\nTag gesamt: 2885 kcal\, 189 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261126T163000
+DTEND;TZID=Europe/Berlin:20261126T164500
+SUMMARY:🥤 Shake: Shake Banane · 529 kcal · 20 g P
+DESCRIPTION:Masse-Shake Banane-Hafer
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Abendessen: Hack-Reis-Pfanne mit Champignons und Karotte ×2
-TRIGGER:-PT35M
+DESCRIPTION:🥤 Shake: Shake Banane · 529 kcal · 20 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-13@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261126T073000
-DTEND;TZID=Europe/Berlin:20261126T074500
-SUMMARY:Frühstück: Overnight Oats Apfel-Zimt mit Quark und Cashews
-DESCRIPTION:⏱ 5 Min. am Vorabend · am Vorabend ansetzen\n\nZutaten: 70 
- g Haferflocken (trocken)\, 200 ml H-Milch 1\,5%\, 100 g Magerquark\, 120 
- g Apfel (ohne Kerngehäuse)\, 10 g Honig (ca. 1 gehäufter TL)\, 10 g Cas
- hew-Mix\n\n1. Abends 70 g Haferflocken (trocken)\, 200 ml H-Milch\, 100 g
-  Magerquark\, 10 g Honig (ca. 1 gehäufter TL) und ½ TL Zimt verrühren.
- \n2. 1 Apfel (120 g ohne Kerngehäuse) klein würfeln\, unterrühren. Dec
- kel drauf\, Kühlschrank.\n3. Morgens 10 g Cashew-Mix (eine kleine Handvo
- ll) drüber.\n\nPro Portion: 577 kcal\, 30 g Protein\, 13 g Fett\, 79 g K
- H\n\nTag gesamt: 3098 kcal\, 198 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261126T183000
+DTEND;TZID=Europe/Berlin:20261126T184500
+SUMMARY:💧 Isoclear: Isoclear · 90 kcal · 22 g P
+DESCRIPTION:Isoclear-Shake
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Frühstück: Overnight Oats Apfel-Zimt mit Quark und Cashews
-TRIGGER:-PT0M
+DESCRIPTION:💧 Isoclear: Isoclear · 90 kcal · 22 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-14@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261126T100000
-DTEND;TZID=Europe/Berlin:20261126T101500
-SUMMARY:Snack: Käse-Toast aus dem Sandwichmaker mit Karottensticks
-DESCRIPTION:⏱ 8 Min.\n\nZutaten: 50 g Vollkorntoast (ca. 2 Scheiben)\, 4
- 0 g Gouda (ca. 2 Scheiben)\, 100 g Karotten (roh\, geschält)\n\n1. Sandw
- ichmaker laut Anleitung vorheizen (meist zeigt eine Lampe\, wann er heiß
-  ist).\n2. 2 Scheiben Vollkorntoast mit 2 Scheiben Gouda (40 g) dazwische
- n hineinlegen\, zuklappen\, 3 bis 4 Min. bis goldbraun.\n3. 1 Karotte (10
- 0 g) schälen und in Stifte schneiden\, dazu essen.\n\nPro Portion: 298 k
- cal\, 15 g Protein\, 13 g Fett\, 28 g KH\n\nTag gesamt: 3098 kcal\, 198 g
-  Protein
-CATEGORIES:Ernährung
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Snack: Käse-Toast aus dem Sandwichmaker mit Karottensticks
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ernaehrung-2026-11-24-15@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261126T123000
-DTEND;TZID=Europe/Berlin:20261126T124500
-SUMMARY:Mittag: Hack-Reis-Pfanne mit Champignons und Karotte (Rest)
-DESCRIPTION:⏱ 3 Min. aufwärmen oder kalt · Rest von Mittwoch\n\nRest v
- om Vorabend: in der Pfanne mit 1 EL Wasser 3 Min. erwärmen oder kalt ess
- en.\n\nPro Portion: 780 kcal\, 40 g Protein\n\nTag gesamt: 3098 kcal\, 19
- 8 g Protein
-CATEGORIES:Ernährung
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Mittag: Hack-Reis-Pfanne mit Champignons und Karotte (Rest)
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ernaehrung-2026-11-24-16@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261126T163000
-DTEND;TZID=Europe/Berlin:20261126T164500
-SUMMARY:Shake: Shake Banane-Hafer mit Erdnussbutter
-DESCRIPTION:⏱ 5 Min.\n\nZutaten: 200 ml H-Milch 1\,5%\, 40 g Haferflocke
- n (trocken)\, 90 g Banane (ohne Schale)\, 80 g Magerquark\, 20 g Erdnussb
- utter (ca. 1 gehäufter EL)\, 10 g Honig (ca. 1 gehäufter TL)\n\n1. **Zu
- erst 200 ml H-Milch** in den Mixer\, dann 40 g Haferflocken. 20 Sek. mixe
- n\, damit der Hafer fein wird.\n2. 1 kleine Banane (90 g ohne Schale) in 
- Stücken\, 80 g Magerquark\, 20 g Erdnussbutter (ca. 1 gehäufter EL) und
-  10 g Honig (ca. 1 gehäufter TL) dazugeben.\n3. 30 bis 45 Sek. mixen\, b
- is alles glatt ist. Ergibt ca. 400 ml\, also dein Caipirinha-Glas fast vo
- ll. Zu dick? 2 bis 3 EL Wasser dazu.\n4. Gleich trinken. Danach Mixer sof
- ort mit warmem Wasser und 1 Tropfen Spülmittel 20 Sek. laufen lassen und
-  ausspülen.\n5. Keine gefrorenen Früchte in den Shake\, die schafft dei
- n Mixer nicht gut.\n6. Di bis Do zuerst die offene frische Milch nehmen\,
-  dann die H-Milch.\n\nPro Portion: 532 kcal\, 28 g Protein\, 16 g Fett\, 
- 64 g KH\n\nTag gesamt: 3098 kcal\, 198 g Protein
-CATEGORIES:Ernährung
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Shake: Shake Banane-Hafer mit Erdnussbutter
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ernaehrung-2026-11-24-17@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261126T183000
-DTEND;TZID=Europe/Berlin:20261126T184500
-SUMMARY:Isoclear-Shake: Isoclear-Shake mit Wasser
-DESCRIPTION:⏱ 2 Min.\n\nZutaten: 1 Portion Isoclear\n\n1. 1 Portion Isoc
- lear (Messlöffel laut Packung) mit 300 bis 400 ml kaltem Wasser schütte
- ln.\n\nPro Portion: 90 kcal\, 22 g Protein\, 0 g Fett\, 0 g KH\n\nTag ges
- amt: 3098 kcal\, 198 g Protein
-CATEGORIES:Ernährung
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Isoclear-Shake: Isoclear-Shake mit Wasser
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ernaehrung-2026-11-24-18@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261126T203000
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261126T195500
 DTEND;TZID=Europe/Berlin:20261126T210000
-SUMMARY:Abendessen: Gebratener Reis mit Pute\, Lauch und Ei
-DESCRIPTION:⏱ 30 Min. · nur 1 Portion\n\nZutaten: 175 g Putenbrust (roh
- )\, 120 g Reis (ungekocht/trocken\, gekocht ca. 360 g)\, 150 g Lauch (gep
- utzt)\, 60 g Ei (ohne Schale\, ca. 1 Stück Gr. L)\, 15 g Sojasauce (ca. 
- 1 EL)\, 10 g Rapsöl (ca. 1 EL oder 2 TL)\n\n1. 120 g Reis (trocken) in e
- inem Sieb kalt waschen\, bis das Wasser fast klar ist. In den Reiskocher\
- , ca. 180 ml Wasser dazu (Richtwert 1\,5-fache Menge\; wenn dein Reiskoch
- er Markierungen hat\, gelten die). Einschalten. Fertig\, wenn er auf Warm
- halten springt (meist 20 bis 30 Min.).\n2. Lauch (150 g) längs halbieren
- \, unter fließendem Wasser die Erde zwischen den Schichten auswaschen\, 
- in dünne Ringe schneiden.\n3. Pute (175 g roh) in dünne Streifen schnei
- den.\n4. 10 g Rapsöl (ca. 2 TL) in der Pfanne auf mittlerer bis hoher Hi
- tze\, Pute 4 bis 5 Min. braten\, bis sie innen nicht mehr rosa ist.\n5. L
- auch dazu\, 3 Min. braten. 1 Ei aufschlagen\, dazu und unter Rühren stoc
- ken lassen.\n6. Reis und 15 g Sojasauce (ca. 1 EL) dazu\, 2 Min. braten. 
- Nur 1 Portion\, Freitag gibt es kein Mittagessen.\n\nPro Portion: 821 kca
- l\, 63 g Protein\, 18 g Fett\, 99 g KH\n\nTag gesamt: 3098 kcal\, 198 g P
- rotein
+SUMMARY:🍳 Abendessen: Honig-Soja-Hähnchen ×2 · 674 kcal · 51 g P
+DESCRIPTION:Honig-Soja-Hähnchen aus dem Airfryer mit Reis und Brokkoli
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Abendessen: Gebratener Reis mit Pute\, Lauch und Ei
+DESCRIPTION:🍳 Abendessen: Honig-Soja-Hähnchen ×2 · 674 kcal · 51 g P
 TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:ernaehrung-2026-11-24-19@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261127T073000
-DTEND;TZID=Europe/Berlin:20261127T074500
-SUMMARY:Frühstück: Overnight Oats Banane mit Quark
-DESCRIPTION:⏱ 5 Min. am Vorabend · am Vorabend ansetzen\n\nZutaten: 70 
- g Haferflocken (trocken)\, 200 ml H-Milch 1\,5%\, 100 g Magerquark\, 100 
- g Banane (ohne Schale)\, 10 g Honig (ca. 1 gehäufter TL)\n\n1. Abends 70
-  g Haferflocken (trocken)\, 200 ml H-Milch\, 100 g Magerquark und 10 g Ho
- nig (ca. 1 gehäufter TL) in ein Glas geben\, verrühren\, Deckel drauf\,
-  Kühlschrank.\n2. Morgens 1 Banane (100 g ohne Schale) in Scheiben drauf
- .\n\nPro Portion: 545 kcal\, 29 g Protein\, 8 g Fett\, 82 g KH\n\nTag ges
- amt: 1652 kcal\, 81 g Protein
+UID:ernaehrung-2026-11-24-15@jakob-plan
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261126T211500
+DTEND;TZID=Europe/Berlin:20261126T213000
+SUMMARY:📝 Für morgen vorbereiten
+DESCRIPTION:Oats Banane für Fr ansetzen\n2 Eier im Eierkocher für Fr\nHä
+ hnchen-Rest in Box (Zug-Essen Fr)\n150 g Hähnchen roh in Gefrierbeutel in
+ s Gefrierfach (für Mo)
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Frühstück: Overnight Oats Banane mit Quark
-TRIGGER:-PT0M
+DESCRIPTION:📝 Für morgen vorbereiten
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-16@jakob-plan
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261127T071500
+DTEND;TZID=Europe/Berlin:20261127T072000
+SUMMARY:⚖️ Wiegen (vor dem Frühstück)
+DESCRIPTION:Nüchtern wiegen\, Wert merken.
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚖️ Wiegen (vor dem Frühstück)
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-17@jakob-plan
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261127T073000
+DTEND;TZID=Europe/Berlin:20261127T080000
+SUMMARY:🥣 Frühstück: Oats Banane · 629 kcal · 35 g P
+DESCRIPTION:Overnight Oats Banane mit Skyr
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🥣 Frühstück: Oats Banane · 629 kcal · 35 g P
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-18@jakob-plan
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261127T100000
+DTEND;TZID=Europe/Berlin:20261127T101500
+SUMMARY:🍎 Snack: 2 Eier + Apfel · 245 kcal · 15 g P
+DESCRIPTION:2 Eier aus dem Eierkocher und 1 Apfel
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🍎 Snack: 2 Eier + Apfel · 245 kcal · 15 g P
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ernaehrung-2026-11-24-19@jakob-plan
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261127T115000
+DTEND;TZID=Europe/Berlin:20261127T120500
+SUMMARY:🥤 Shake: Mini-Shake · 468 kcal · 19 g P
+DESCRIPTION:Mini-Shake vor der Abfahrt
+CATEGORIES:Ernährung
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:🥤 Shake: Mini-Shake · 468 kcal · 19 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-20@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261127T130000
-DTEND;TZID=Europe/Berlin:20261127T131500
-SUMMARY:Zug: Mini-Shake Banane für den Zug
-DESCRIPTION:⏱ 5 Min. · um 12:00 mixen\, bis 14:00 trinken\n\nZutaten: 3
- 00 ml H-Milch 1\,5%\, 50 g Haferflocken (trocken)\, 100 g Banane (ohne Sc
- hale)\, 10 g Honig (ca. 1 gehäufter TL)\n\n1. Um ca. 12:00: 300 ml H-Mil
- ch\, 50 g Haferflocken\, 1 Banane (100 g) und 10 g Honig (ca. 1 gehäufte
- r TL) 45 Sek. mixen.\n2. In eine gut schließende Flasche füllen.\n3. Un
- gekühlt bis spätestens ca. 14:00 trinken (Richtwert: Milchgetränke nic
- ht länger als ca. 2 Std. ohne Kühlung). Den Rest dann lieber wegschütt
- en.\n\nPro Portion: 450 kcal\, 18 g Protein\, 8 g Fett\, 71 g KH\n\nTag g
- esamt: 1652 kcal\, 81 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261127T133000
+DTEND;TZID=Europe/Berlin:20261127T134500
+SUMMARY:🎒 Zug: Hähnchen-Reis kalt · 674 kcal · 51 g P
+DESCRIPTION:Honig-Soja-Hähnchen aus dem Airfryer mit Reis und Brokkoli
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Zug: Mini-Shake Banane für den Zug
-TRIGGER:-PT0M
+DESCRIPTION:🎒 Zug: Hähnchen-Reis kalt · 674 kcal · 51 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-21@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261127T150000
-DTEND;TZID=Europe/Berlin:20261127T151500
-SUMMARY:Zug: Käse-Ei-Sandwiches für den Zug\, dazu Cashews
-DESCRIPTION:⏱ 10 Min. · um 12:00 machen\n\nZutaten: 100 g Vollkorntoast
-  (ca. 4 Scheiben)\, 60 g Gouda (ca. 3 Scheiben)\, 60 g Ei (ohne Schale\, 
- ca. 1 Stück Gr. L)\, 20 g Cashew-Mix\n\n1. Das Ei hast du Donnerstagaben
- d im Eierkocher hart gekocht. Schälen und in Scheiben schneiden.\n2. Um 
- ca. 12:00: 4 Scheiben Vollkorntoast\, 3 Scheiben Gouda (60 g) und die Eis
- cheiben zu 2 Sandwiches legen\, im Sandwichmaker 3 bis 4 Min. backen.\n3.
-  Kurz abkühlen lassen\, in eine Box oder in Butterbrotpapier packen. 20 
- g Cashew-Mix in eine kleine Dose. Am besten bis ca. 16:00 essen.\n\nPro P
- ortion: 657 kcal\, 34 g Protein\, 35 g Fett\, 48 g KH\n\nTag gesamt: 1652
-  kcal\, 81 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261127T160000
+DTEND;TZID=Europe/Berlin:20261127T161500
+SUMMARY:🎒 Zug: Sandwiches + Cashews · 692 kcal · 33 g P
+DESCRIPTION:Käse-Sandwiches und Cashews für den Zug
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Zug: Käse-Ei-Sandwiches für den Zug\, dazu Cashews
-TRIGGER:-PT0M
+DESCRIPTION:🎒 Zug: Sandwiches + Cashews · 692 kcal · 33 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-22@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261129T200000
-DTEND;TZID=Europe/Berlin:20261129T201500
-SUMMARY:Kleiner Snack: Käse-Toast
-DESCRIPTION:⏱ 5 Min. · aus dem Vorrat\n\nZutaten: 50 g Vollkorntoast (c
- a. 2 Scheiben)\, 30 g Gouda (ca. 2 Scheiben)\n\n1. 2 Scheiben Vollkorntoa
- st mit 1½ Scheiben Gouda (30 g) im Sandwichmaker 3 bis 4 Min. backen (od
- er toasten und belegen).\n\nPro Portion: 228 kcal\, 11 g Protein\, 10 g F
- ett\, 21 g KH\n\nTag gesamt: 228 kcal\, 11 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261129T210000
+DTEND;TZID=Europe/Berlin:20261129T211500
+SUMMARY:🍎 Snack: Skyr Hafer · 269 kcal · 26 g P
+DESCRIPTION:Skyr mit Honig und Haferflocken
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Kleiner Snack: Käse-Toast
-TRIGGER:-PT0M
+DESCRIPTION:🍎 Snack: Skyr Hafer · 269 kcal · 26 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-23@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261130T073000
-DTEND;TZID=Europe/Berlin:20261130T074500
-SUMMARY:Frühstück: Overnight Oats Beeren mit Quark und Cashews
-DESCRIPTION:⏱ 5 Min. am Vorabend · Sonntagabend angesetzt\n\nZutaten: 7
- 0 g Haferflocken (trocken)\, 200 ml H-Milch 1\,5%\, 100 g Magerquark\, 10
- 0 g TK-Beeren (gefroren)\, 10 g Honig (ca. 1 gehäufter TL)\, 10 g Cashew
- -Mix\n\n1. Abends 70 g Haferflocken (trocken)\, 200 ml H-Milch\, 100 g Ma
- gerquark\, 10 g Honig (ca. 1 gehäufter TL) und 100 g TK-Beeren (gefroren
- \, tauen über Nacht auf) in ein Glas\, verrühren\, Kühlschrank.\n2. Mo
- rgens 10 g Cashew-Mix drüber.\n\nPro Portion: 557 kcal\, 31 g Protein\, 
- 13 g Fett\, 72 g KH\n\nTag gesamt: 2973 kcal\, 206 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261129T211500
+DTEND;TZID=Europe/Berlin:20261129T213000
+SUMMARY:📝 Für morgen vorbereiten
+DESCRIPTION:Oats Beeren für Mo ansetzen\n2 Eier im Eierkocher für Mo\nHä
+ hnchen aus dem Gefrierfach in den Kühlschrank legen (Auftauen)
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Frühstück: Overnight Oats Beeren mit Quark und Cashews
-TRIGGER:-PT0M
+DESCRIPTION:📝 Für morgen vorbereiten
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-24@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261130T100000
-DTEND;TZID=Europe/Berlin:20261130T101500
-SUMMARY:Snack: 2 Eier aus dem Eierkocher und 1 Apfel
-DESCRIPTION:⏱ 15 Min. am Vorabend (Eierkocher) · Eier Sonntagabend koch
- en\n\nZutaten: 120 g Ei (ohne Schale\, ca. 2 Stück Gr. L)\, 150 g Apfel 
- (ohne Kerngehäuse)\n\n1. Am Vorabend 2 Eier im Eierkocher hart kochen: W
- asser mit dem Messbecher deines Eierkochers für „hart“ einfüllen\, 
- Eier anstechen (falls dein Eierkocher einen Dorn hat)\, einschalten.\n2. 
- Wenn er fertig ist (meist ein Signalton)\, Eier kalt abschrecken und in d
- en Kühlschrank.\n3. Morgens mit 1 Apfel einpacken.\n\nPro Portion: 245 k
- cal\, 15 g Protein\, 11 g Fett\, 19 g KH\n\nTag gesamt: 2973 kcal\, 206 g
-  Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261130T071500
+DTEND;TZID=Europe/Berlin:20261130T072000
+SUMMARY:⚖️ Wiegen (vor dem Frühstück)
+DESCRIPTION:Nüchtern wiegen\, Wert merken.
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Snack: 2 Eier aus dem Eierkocher und 1 Apfel
-TRIGGER:-PT0M
+DESCRIPTION:⚖️ Wiegen (vor dem Frühstück)
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-25@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261130T123000
-DTEND;TZID=Europe/Berlin:20261130T124500
-SUMMARY:Mittag: Thunfisch-Ei-Reis mit TK-Gemüse
-DESCRIPTION:⏱ 12 Min. · Reis Sonntagabend kochen\n\nZutaten: 120 g Reis
-  (ungekocht/trocken\, gekocht ca. 360 g)\, 150 g Thunfisch (abgetropft)\,
-  120 g Ei (ohne Schale\, ca. 2 Stück Gr. L)\, 150 g TK-Asiagemüse (gefr
- oren)\, 5 g Rapsöl (ca. 1 TL)\, 10 g Sojasauce (ca. 2 TL)\n\n1. Der Reis
-  ist schon gekocht (Sonntagabend 120 g im Reiskocher gekocht\, abgekühlt
- \, im Kühlschrank).\n2. 5 g Rapsöl (ca. 1 TL) in die Pfanne\, 150 g TK-
- Gemüse gefroren hinein\, 5 Min. braten.\n3. Reis und Thunfisch (1 Dose\,
-  abgetropft 150 g) dazu\, 2 Min. braten.\n4. 2 Eier aufschlagen\, dazu un
- d unter Rühren stocken lassen. 10 g Sojasauce (ca. 2 TL)\, Pfeffer. In d
- ie Box zum Mitnehmen.\n\nPro Portion: 852 kcal\, 66 g Protein\, 19 g Fett
- \, 100 g KH\n\nTag gesamt: 2973 kcal\, 206 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261130T073000
+DTEND;TZID=Europe/Berlin:20261130T080000
+SUMMARY:🥣 Frühstück: Oats Beeren · 506 kcal · 19 g P
+DESCRIPTION:Overnight Oats Beeren mit Honig
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Mittag: Thunfisch-Ei-Reis mit TK-Gemüse
-TRIGGER:-PT0M
+DESCRIPTION:🥣 Frühstück: Oats Beeren · 506 kcal · 19 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-26@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261130T163000
-DTEND;TZID=Europe/Berlin:20261130T164500
-SUMMARY:Shake: Shake Apfel-Zimt mit Erdnussbutter
-DESCRIPTION:⏱ 5 Min.\n\nZutaten: 200 ml H-Milch 1\,5%\, 40 g Haferflocke
- n (trocken)\, 100 g Apfel (ohne Kerngehäuse)\, 80 g Magerquark\, 20 g Er
- dnussbutter (ca. 1 gehäufter EL)\, 10 g Honig (ca. 1 gehäufter TL)\n\n1
- . **Zuerst 200 ml H-Milch** in den Mixer\, dann 40 g Haferflocken. 20 Sek
- . mixen\, damit der Hafer fein wird.\n2. 1 kleiner Apfel (100 g\, ohne Ke
- rngehäuse\, klein gewürfelt\, Schale darf dran)\, ½ TL Zimt\, 80 g Mag
- erquark\, 20 g Erdnussbutter (ca. 1 gehäufter EL) und 10 g Honig (ca. 1 
- gehäufter TL) dazugeben.\n3. 30 bis 45 Sek. mixen\, bis alles glatt ist.
-  Ergibt ca. 400 ml\, also dein Caipirinha-Glas fast voll. Zu dick? 2 bis 
- 3 EL Wasser dazu.\n4. Gleich trinken. Danach Mixer sofort mit warmem Wass
- er und 1 Tropfen Spülmittel 20 Sek. laufen lassen und ausspülen.\n5. Ke
- ine gefrorenen Früchte in den Shake\, die schafft dein Mixer nicht gut.\
- n\nPro Portion: 503 kcal\, 27 g Protein\, 16 g Fett\, 58 g KH\n\nTag gesa
- mt: 2973 kcal\, 206 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261130T100000
+DTEND;TZID=Europe/Berlin:20261130T101500
+SUMMARY:🍎 Snack: 2 Eier + Apfel · 245 kcal · 15 g P
+DESCRIPTION:2 Eier aus dem Eierkocher und 1 Apfel
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Shake: Shake Apfel-Zimt mit Erdnussbutter
-TRIGGER:-PT0M
+DESCRIPTION:🍎 Snack: 2 Eier + Apfel · 245 kcal · 15 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-27@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261130T183000
-DTEND;TZID=Europe/Berlin:20261130T184500
-SUMMARY:Isoclear-Shake: Isoclear-Shake mit Wasser
-DESCRIPTION:⏱ 2 Min.\n\nZutaten: 1 Portion Isoclear\n\n1. 1 Portion Isoc
- lear (Messlöffel laut Packung) mit 300 bis 400 ml kaltem Wasser schütte
- ln.\n\nPro Portion: 90 kcal\, 22 g Protein\, 0 g Fett\, 0 g KH\n\nTag ges
- amt: 2973 kcal\, 206 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261130T123000
+DTEND;TZID=Europe/Berlin:20261130T130000
+SUMMARY:🍽 Mittag: Rührei-Reis Erbsen · 691 kcal · 32 g P
+DESCRIPTION:Reis mit Rührei\, Erbsen und Gouda
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Isoclear-Shake: Isoclear-Shake mit Wasser
-TRIGGER:-PT0M
+DESCRIPTION:🍽 Mittag: Rührei-Reis Erbsen · 691 kcal · 32 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-28@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261130T203000
-DTEND;TZID=Europe/Berlin:20261130T210000
-SUMMARY:Abendessen: Airfryer-Bratkartoffeln mit Eiern und Kräuterquark
-DESCRIPTION:⏱ 35 Min.\n\nZutaten: 500 g Kartoffeln (roh\, ungeschält)\,
-  5 g Rapsöl (ca. 1 TL)\, 40 g Zwiebel (geschält)\, 120 g Ei (ohne Schal
- e\, ca. 2 Stück Gr. L)\, 125 g Magerquark\, 20 g Gouda (ca. 1 Scheiben)\
- n\n1. Kartoffeln (500 g) gründlich waschen\, Schale dranlassen\, in ca. 
- 1\,5 cm große Würfel schneiden. Mit Küchenpapier gut trocken tupfen (t
- rocken = knuspriger).\n2. In einer Schüssel mit 5 g Rapsöl (ca. 1 TL)\,
-  ½ TL Salz\, ½ TL Paprika edelsüß und Pfeffer mischen\, bis alle Wür
- fel glänzen. Ohne Öl gehen sie auch\, werden aber trockener und weniger
-  knusprig.\n3. Airfryer (Ninja Dual Zone): Würfel in einen Korb\, Funkti
- on „Air Fry“\, 200 °C\, 25 Min. Nach 10 Min. und nach 18 Min. den Ko
- rb herausziehen und schütteln.\n4. Beim Schütteln nach 18 Min. die Zwie
- bel (40 g\, in Streifen) dazugeben. In den letzten 2 Min. 1 Scheibe Gouda
-  (20 g) in Stücken drüberlegen.\n5. Fertig\, wenn sie außen goldbraun 
- sind und eine Gabel leicht hineingeht. Sonst 3 bis 5 Min. länger.\n6. W
- ährenddessen 2 Eier im Eierkocher kochen (wachsweich oder hart\, wie du 
- magst). Kräuterquark: 125 g Magerquark\, 1 EL Wasser\, Salz\, Kräuter d
- er Provence glatt rühren.\n\nPro Portion: 726 kcal\, 45 g Protein\, 23 g
-  Fett\, 83 g KH\n\nTag gesamt: 2973 kcal\, 206 g Protein
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261130T143000
+DTEND;TZID=Europe/Berlin:20261130T144500
+SUMMARY:🍎 Snack: Honigtoast + Apfel · 268 kcal · 6 g P
+DESCRIPTION:Toast mit Honig und Apfel
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Abendessen: Airfryer-Bratkartoffeln mit Eiern und Kräuterquar
- k
-TRIGGER:-PT35M
+DESCRIPTION:🍎 Snack: Honigtoast + Apfel · 268 kcal · 6 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-29@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261124T210000
-DTEND;TZID=Europe/Berlin:20261124T211500
-SUMMARY:Vorbereiten: Oats + Eier für morgen
-DESCRIPTION:⏱ 15 Min.\n\nOats Banane: 70 g Haferflocken (trocken)\, 200 
- ml Milch\, 100 g Magerquark\, 10 g Honig (ca. 1 TL) verrühren\, Kühlsch
- rank. Banane morgens dazu.\n2 Eier im Eierkocher hart kochen\, abschrecke
- n\, Kühlschrank.
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261130T163000
+DTEND;TZID=Europe/Berlin:20261130T164500
+SUMMARY:🥤 Shake: Shake Apfel · 498 kcal · 19 g P
+DESCRIPTION:Shake Apfel-Zimt mit Erdnussbutter
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Vorbereiten: Oats + Eier für morgen
-TRIGGER:-PT0M
+DESCRIPTION:🥤 Shake: Shake Apfel · 498 kcal · 19 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-30@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261125T210000
-DTEND;TZID=Europe/Berlin:20261125T210500
-SUMMARY:Vorbereiten: Oats für morgen ansetzen
-DESCRIPTION:⏱ 5 Min.\n\nOats Apfel-Zimt: 70 g Haferflocken (trocken)\, 2
- 00 ml Milch\, 100 g Magerquark\, 10 g Honig\, ½ TL Zimt\, 1 Apfel (120 g
- ) gewürfelt. Cashews morgens drüber.
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261130T183000
+DTEND;TZID=Europe/Berlin:20261130T184500
+SUMMARY:💧 Isoclear: Isoclear · 90 kcal · 22 g P
+DESCRIPTION:Isoclear-Shake
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Vorbereiten: Oats für morgen ansetzen
-TRIGGER:-PT0M
+DESCRIPTION:💧 Isoclear: Isoclear · 90 kcal · 22 g P
+TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-31@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261126T210000
-DTEND;TZID=Europe/Berlin:20261126T211500
-SUMMARY:Vorbereiten: Oats + Ei für morgen
-DESCRIPTION:⏱ 15 Min.\n\nOats Banane: 70 g Haferflocken (trocken)\, 200 
- ml H-Milch\, 100 g Magerquark\, 10 g Honig. Banane morgens dazu.\n1 Ei im
-  Eierkocher hart kochen (für die Zug-Sandwiches).
+DTSTAMP:20261125T125359Z
+DTSTART;TZID=Europe/Berlin:20261130T200000
+DTEND;TZID=Europe/Berlin:20261130T210000
+SUMMARY:🍳 Abendessen: Hähnchen-Paprika · 716 kcal · 46 g P
+DESCRIPTION:Hähnchen-Paprika-Reispfanne
 CATEGORIES:Ernährung
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Vorbereiten: Oats + Ei für morgen
-TRIGGER:-PT0M
+DESCRIPTION:🍳 Abendessen: Hähnchen-Paprika · 716 kcal · 46 g P
+TRIGGER:-PT30M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-32@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261129T210000
-DTEND;TZID=Europe/Berlin:20261129T213000
-SUMMARY:Vorbereiten: Oats für Mo + Di\, Eier + Reis für Mo
-DESCRIPTION:⏱ 30 Min.\n\n2 Gläser Oats Beeren: je 70 g Haferflocken (tr
- ocken)\, 200 ml H-Milch\, 100 g Magerquark\, 10 g Honig\, 100 g TK-Beeren
- .\n2 Eier im Eierkocher hart kochen.\n120 g Reis im Reiskocher kochen\, a
- bkühlen lassen\, Kühlschrank (Mo-Mittag).
+DTSTAMP:20261125T125359Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:🛒 Einkauf Rewe (Dienstag)
+DESCRIPTION:Einkaufsliste: https://zmeezyy.github.io/ernaehrung-kalender/ei
+ nkauf-di.html
 CATEGORIES:Ernährung
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Vorbereiten: Oats für Mo + Di\, Eier + Reis für Mo
-TRIGGER:-PT0M
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ernaehrung-2026-11-24-33@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;TZID=Europe/Berlin:20261130T210000
-DTEND;TZID=Europe/Berlin:20261130T210500
-SUMMARY:Vorbereiten: Reis für Di-Mittag kochen
-DESCRIPTION:⏱ 5 Min.\n\n80 g Reis im Reiskocher kochen\, abkühlen lasse
- n\, Kühlschrank (Eierreis am Di 01.12.).
+DTSTAMP:20261125T125359Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:🛒 Einkauf Rewe (Donnerstag)
+DESCRIPTION:Einkaufsliste: https://zmeezyy.github.io/ernaehrung-kalender/ei
+ nkauf-do.html
 CATEGORIES:Ernährung
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Vorbereiten: Reis für Di-Mittag kochen
-TRIGGER:-PT0M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ernaehrung-2026-11-24-34@jakob-plan
-DTSTAMP:20261123T170000Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261125
-SUMMARY:Einkauf Rewe (ca. 33.69 €)
-DESCRIPTION:Einkaufsliste in Laufreihenfolge:\n[Obst & Gemüse] Bananen\, 
- 6 Stück (ca. 900 g mit Schale) (ca. 1.39 €)\n[Obst & Gemüse] Äpfel (
- regional)\, 4 Stück (ca. 650 g) (ca. 1.59 €)\n[Obst & Gemüse] Brokkol
- i\, 1 kleiner Kopf (ca. 300 g\, geputzt ca. 200 g) (ca. 1.29 €)\n[Obst 
- & Gemüse] Champignons braun\, 250 g (ca. 1.49 €)\n[Obst & Gemüse] Lau
- ch (Porree)\, 1 kleine Stange (ca. 200 g) (ca. 0.99 €)\n[Obst & Gemüse
- ] Karotten (regional\, lose)\, 3 Stück (ca. 250 g) (ca. 0.55 €)\n[Flei
- sch] Hähnchenbrustfilet\, 350 g (Theke) (ca. 4.55 €)\n[Fleisch] Hackfl
- eisch gemischt\, 300 g (Theke) (ca. 3.00 €)\n[Fleisch] Putenbrust / Put
- enschnitzel\, 175 g (Theke) (ca. 2.45 €)\n[Milch\, Käse\, Eier] H-Milc
- h 1\,5 %\, 2 × 1 l (ca. 2.18 €)\n[Milch\, Käse\, Eier] Magerquark\, 2
-  × 500 g + 1 × 250 g (ca. 3.27 €)\n[Milch\, Käse\, Eier] Gouda in Sc
- heiben\, 150 g (ca. 1.49 €)\n[Milch\, Käse\, Eier] Bio-Eier (Größe L
- )\, 10 Stück (ca. 3.99 €)\n[Frühstück & Snacks] Haferflocken (kernig
- )\, 1 × 500 g (ca. 0.79 €)\n[Frühstück & Snacks] Vollkorntoast\, 1 P
- ackung (500 g) (ca. 1.29 €)\n[Nudeln\, Reis\, Konserven] Thunfisch in e
- igenem Saft\, 1 Dose à 185 g (ca. 1.59 €)\n[Tiefkühl] TK-Asia-Gemüse
-  (ohne Soße)\, 750 g (ca. 1.79 €)\n\nNicht kaufen\, ist noch da: Reis 
- (bringst du mit)\, Kartoffeln\, Zwiebeln\, Erdnussbutter\, Nüsse\, Butte
- r\, Öl\, Sojasauce\, Gewürze. Honig und TK-Beeren nur\, wenn zu wenig d
- a ist.\nAbhaken: https://zmeezyy.github.io/ernaehrung-kalender/einkauf.ht
- ml
-CATEGORIES:Ernährung
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Einkauf Rewe (ca. 33.69 €)
-TRIGGER:PT9H
-END:VALARM
 END:VEVENT
 END:VCALENDAR
